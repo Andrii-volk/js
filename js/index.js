@@ -1,3 +1,5 @@
+// js язык с денамической типизацией высокоуровневая интерпретиррованная мултьтипарадигминная
+
 // alert("hello world")
 // console.log("hello wolrfd");
 
@@ -132,7 +134,7 @@
 
 // приведение типов явное
 
-("4");
+// ("4");
 // console.log("Number('4') :>> ", Number("4"));
 // console.log("Number('true') :>> ", Number(true));
 // console.log("Number('false') :>> ", Number(false));
@@ -150,10 +152,83 @@
 // console.log(typeof ('5' + 5));
 // console.log("5" + 5);
 
-
 // введения данных
 // prompt всё воспринимает как строку
-const inputValue = prompt('Введите число'); //50
-const result = inputValue + inputValue;
-console.log('result :>> ', result);
+// const inputValue = Number(prompt('Введите число')); //50
+// const result = inputValue + inputValue; //'50' + '50'
+// console.log('result :>> ', result);
+
+// + перед prompt тоже приводит к числу
+// const firstNumber = +(prompt('Введите первое число')); //5
+
+// const firstNumber = Number(prompt("Введите первое число")); //5
+// const secondNumber = Number(prompt("Введите второе число")); //5
+
+// console.log(firstNumber + secondNumber);
+// !
+//?
+
+//* dfgdfdfg
+
+// TODO
+// console.log('Elon musk', 1982);
+// console.log('Elon musk');
+// console.log (typeof(9546465464645656n));
+
+// const string1 = ' I\'am a Teacher';
+// console.log(typeof(string1));
+//?
+// console.log(string1 ,typeof string1);
+
+// let condition = true;
+
+
+// if(...условие){..блок кода который будет выполняться если условие правдиво...}
+
+// if (condition) {
+//   console.log("value =", condition)
+  
+// };
+ 
+// ! false
+// !undefined
+// !nullё
+// !NaN
+// !  ''empty string
+// ! 0 +0 -0*/
+ 
+//!  console.log(-2 ** 3); ошибка
+//? console.log((-2) ** 3); правильно
+
+// !логическое нет ( инвертирует)
+//  !undefined --- true
+ 
+
+// ?'west' > 'best' ---сравниваеться номер символа в таблице (=)--всегда пишеьбся вторым
+
+
+//логическое сложение ИЛИ ||(коньюкция)
+// 0+1 =1  1+0=1 0+0=1
+// возврашает  первую  правду или  поседнюю  ложь
+
+
+
+
+
+// логическое  умножение И && (дизъюнкция)
+
+// 1*0=0 0*1=0 0*0=0  1*1=1
+// возврашает последную правду или первую ложь
+
+
+let condition = true && 12;
+
+console.log(condition);
+
+
+
+
+
+
+
 
