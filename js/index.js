@@ -247,10 +247,40 @@
 // вызов функции
 // requestNumberAtUser();
 
-
 // good practic
 // функцианальное выражение function expression
-const requestNumberAtUser = function name(params) {
-  prompt('enter number', '10');
+// const requestNumberAtUser = function name(params) {
+//   prompt('enter number', '10');
+// };
+// requestNumberAtUser()
+
+// !const summa = Number(firstNumber + secondNumber);//не преаброзует к числу
+
+const calcSummaTwoNumberReqAtUser = function name() {
+  const firstNumber = prompt('enter first number');
+  const secondNumber = prompt('enter second number');
+
+  // ошибка:если ничего не ввели пустая строка либо на жали отмена либо что-то не число
+  if (
+    firstNumber === '' ||
+    secondNumber === '' ||
+    firstNumber === null ||
+    secondNumber === null ||
+    isNaN(Number(firstNumber)) ||
+    isNaN(Number(secondNumber))
+  ) {
+    // true
+    // обработка ошибки
+    return 'error';
+  } else {
+    // false
+    // если ошибки нет выполняем этот блок кода
+    const summa = Number(firstNumber) + Number(secondNumber);
+    return summa;
+  }
 };
-requestNumberAtUser()
+
+// console.log('calcSumma() :>> ', calcSumma());
+
+const summa = calcSummaTwoNumberReqAtUser();
+console.log('summa :>> ', summa);
