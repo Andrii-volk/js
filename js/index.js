@@ -182,53 +182,75 @@
 
 // let condition = true;
 
-
 // if(...условие){..блок кода который будет выполняться если условие правдиво...}
 
 // if (condition) {
 //   console.log("value =", condition)
-  
+
 // };
- 
+
 // ! false
 // !undefined
 // !nullё
 // !NaN
 // !  ''empty string
 // ! 0 +0 -0*/
- 
+
 //!  console.log(-2 ** 3); ошибка
 //? console.log((-2) ** 3); правильно
 
 // !логическое нет ( инвертирует)
 //  !undefined --- true
- 
 
 // ?'west' > 'best' ---сравниваеться номер символа в таблице (=)--всегда пишеьбся вторым
-
 
 //логическое сложение ИЛИ ||(коньюкция)
 // 0+1 =1  1+0=1 0+0=1
 // возврашает  первую  правду или  поседнюю  ложь
-
-
-
-
 
 // логическое  умножение И && (дизъюнкция)
 
 // 1*0=0 0*1=0 0*0=0  1*1=1
 // возврашает последную правду или первую ложь
 
+// let condition = true && 12;
 
-let condition = true && 12;
+// console.log(condition);
 
-console.log(condition);
+// let price = 10;
+
+// price = (price + 5) * 1.03
+
+// console.log('price', price)
+
+// let dateBirthDay;
+// date_BirthDay = '2020/28/06';
+
+// {
+//   const dateBirthDay = '1971/28/06';
+//   console.log('  dateBirthDay:>> ', dateBirthDay );
+// }
+
+// ? имя функции отвечает на вопрос что она делает
+
+// function name(params) {
+
+// }
+
+// let str = prompt('Message', 'default');
+// console.log('str :>> ', str);
+
+// обьявление функции bad practic
+// function requestNumberAtUser(params) {
+//   const number = prompt('enter nuber','10' );
+// }
+// вызов функции
+// requestNumberAtUser();
 
 
-
-
-
-
-
-
+// good practic
+// функцианальное выражение function expression
+const requestNumberAtUser = function name(params) {
+  prompt('enter number', '10');
+};
+requestNumberAtUser()
