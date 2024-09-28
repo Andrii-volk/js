@@ -256,27 +256,30 @@
 
 // !const summa = Number(firstNumber + secondNumber);//не преаброзует к числу
 
+
+// !функция должна быть многозадачная
 const calcSummaTwoNumberReqAtUser = function name() {
   const firstNumber = prompt('enter first number');
   const secondNumber = prompt('enter second number');
 
   // ошибка:если ничего не ввели пустая строка либо на жали отмена либо что-то не число
-  if (
+  const checkError =
     firstNumber === '' ||
     secondNumber === '' ||
     firstNumber === null ||
     secondNumber === null ||
     isNaN(Number(firstNumber)) ||
-    isNaN(Number(secondNumber))
-  ) {
+    isNaN(Number(secondNumber));
+  if (checkError) {
     // true
     // обработка ошибки
-    return 'error';
+    return 'error'; //exit
   } else {
     // false
     // если ошибки нет выполняем этот блок кода
-    const summa = Number(firstNumber) + Number(secondNumber);
-    return summa;
+    // const summa = Number(firstNumber) + Number(secondNumber);
+    // return summa
+    return Number(firstNumber) + Number(secondNumber);
   }
 };
 
