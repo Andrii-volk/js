@@ -1,3 +1,4 @@
+'use strict';
 // js язык с денамической типизацией высокоуровневая интерпретиррованная мултьтипарадигминная
 
 // alert("hello world")
@@ -256,34 +257,266 @@
 
 // !const summa = Number(firstNumber + secondNumber);//не преаброзует к числу
 
+// !функция должна быть однозадачная
+// const calcSummaTwoNumberReqAtUser = function name() {
+//   const firstNumber = prompt('enter first number');
+//   const secondNumber = prompt('enter second number');
 
-// !функция должна быть многозадачная
-const calcSummaTwoNumberReqAtUser = function name() {
-  const firstNumber = prompt('enter first number');
-  const secondNumber = prompt('enter second number');
-
-  // ошибка:если ничего не ввели пустая строка либо на жали отмена либо что-то не число
-  const checkError =
-    firstNumber === '' ||
-    secondNumber === '' ||
-    firstNumber === null ||
-    secondNumber === null ||
-    isNaN(Number(firstNumber)) ||
-    isNaN(Number(secondNumber));
-  if (checkError) {
-    // true
-    // обработка ошибки
-    return 'error'; //exit
-  } else {
-    // false
-    // если ошибки нет выполняем этот блок кода
-    // const summa = Number(firstNumber) + Number(secondNumber);
-    // return summa
-    return Number(firstNumber) + Number(secondNumber);
-  }
-};
+// ошибка:если ничего не ввели пустая строка либо на жали отмена либо что-то не число
+// const checkError =
+//   firstNumber === '' ||
+//   secondNumber === '' ||
+//   firstNumber === null ||
+//   secondNumber === null ||
+//   isNaN(Number(firstNumber)) ||
+//   isNaN(Number(secondNumber));
+// if (checkError) {
+// true
+// обработка ошибки
+// return 'error'; //exit
+// } else {
+// false
+// если ошибки нет выполняем этот блок кода
+// const summa = Number(firstNumber) + Number(secondNumber);
+// return summa
+// return Number(firstNumber) + Number(secondNumber);
+// }
+// };
 
 // console.log('calcSumma() :>> ', calcSumma());
 
-const summa = calcSummaTwoNumberReqAtUser();
-console.log('summa :>> ', summa);
+// const summa = calcSummaTwoNumberReqAtUser();
+// console.log('summa :>> ', summa);
+
+// -------------------------------------------
+
+// const calcSummaTwoNumberReqAtUser = function name() {
+// const firstNumber = prompt('enter first number');
+// const secondNumber = prompt('enter second number');
+
+/**
+ *
+ * @param {null | string} num
+ * @returns { boolean}
+ */
+// const isErrorInputUser = function (num) {
+// const error = num === '' || num === null || isNaN(Number(num));
+// return error;
+
+//   return num === '' || num === null || isNaN(Number(num));
+// };
+
+/**
+ * Return summa two number.
+ * @param {number} firstNumber
+ * @param {number} secondNumber
+ * @returns {null | number}
+ */
+// const calcSummaTwoNumber = function name(firstNumber, secondNumber) {
+//   let summa = Number(firstNumber) + Number(secondNumber);
+//   if (isNaN(summa)) {
+//   }
+//   return null;
+// };
+// return summa;
+
+// let summaLit = calcSummaTwoNumber(1, 2);
+// console.log('summaList :>> ', summaLit);
+
+// let summaUser = calcSummaTwoNumber(firstNumber, secondNumber);
+
+// console.log('summaUser :>> ', summaUser);
+
+// const summa = calcSummaTwoNumber(1,2);
+// console.log('summa :>> ', summa);
+// if (condition) {
+// } else {
+// }
+
+// num = 3;
+
+//TODO task find the perimeter of the square P=4×a
+// const sideSquare = prompt('Enter side square', '10');
+/**
+ *
+ * @param {number} side
+ * @returns {null | number}
+ */
+// const CalcPerimeterSquare = function name(side = 0) {
+//   if (side < 0) {
+//     return null
+
+//   }
+//   return side * 4;
+// };
+
+// console.log(CalcPerimeterSquare());
+
+/**
+ *
+ *
+ */
+// const isAdult = function (age = 0) {
+//   if (18 >= 0) {
+//     return false;
+//   }
+//   console.log('isAdult', isAdult)
+// };
+
+// b = 4;
+
+// let a = 0;
+// let b = '';
+// let c = null;
+
+// let result = a || b || c;
+
+// console.log('result', result);
+
+// if (0 || 0 || 1) {
+//   console.log('Мы попали  в условие');
+// } else {
+//   console.log('не попали');
+// }
+
+// if (1 === Number || 1 !== 1) {
+//   console.log('Мы попали  в условие');
+// } else {
+//   console.log('не попали');
+// }
+
+/**
+ *
+ * @param {number} side
+ * @returns {null | number}
+ */
+// const checksTheTriangleForEquiangularity = function (
+//   sideA = 60,
+//   sideB = 30,
+//   sideC = 60
+// ) {
+//   if (sideA + sideB + sideC !== 180) {
+//     // return ;
+//     return console.log('неравносторонний');
+//   }
+//   if (sideA === sideB && sideB === sideC) {
+//     return console.log('равносторонний');
+//   }
+// };
+
+// checksTheTriangleForEquiangularity(60, 60, 60);
+
+// const checksTheTriangleForRectangularity = function (
+//   sideA = 90,
+//   sideB = 30,
+//   sideC = 60
+// ) {
+//   const RIGHT_ANGLE = 90;
+//   if (sideA + sideB + sideC !== 180) {
+//     return console.log('НЕ треугольник');
+//   }
+//   if (sideA === RIGHT_ANGLE || sideB === RIGHT_ANGLE || sideC === RIGHT_ANGLE) {
+//     return console.log('прямоугольный треуголмек');
+//   }
+
+//   return console.log('НЕ прямоугольный треуголмек');
+// };
+// checksTheTriangleForRectangularity(80,50,50 );
+
+// const checksTheTriangleForIsosceles = function (
+//   angleA = 0,
+//   angleB = 0,
+//   angleC = 0
+// ) {
+//   const RIGHT_ANGLE = 90;
+//   if (angleA + angleB + angleC !== 180) {
+//     return console.log('НЕ треугольник');
+//   }
+
+//   if (angleA === angleB || angleA === angleC) {
+//    return console.log('isosceles');
+//   }
+
+//   return console.log('not isosceles');
+// };
+// checksTheTriangleForIsosceles(10, 20, 150);
+
+// let a = 3;
+// let b = 7;
+// console.log(typeof (a + b));
+
+// const MAX_SPEED = 120;
+// console.log(`Максимальная скорость: ${MAX_SPEED + MAX_SPEED}`);
+// let num = Number(stringValur);
+
+// let stringValur = '150';
+
+// console.log(Number (stringValur) + 50);
+
+// let x = 12;
+// let y = 4;
+
+// console.log(x / y);
+// console.log(x % y);
+
+// const temperature =1;
+
+// if (temperature > 0) {
+//   console.log('plus');
+// } else if (temperature < 0) {
+//   console.log('minus');
+// } else {
+//   console.log('0');
+// }
+
+// let isMemmber = true;
+// let isGuest = true;
+
+// if (isMemmber || isGuest) {
+//   console.log('ok');
+// }
+
+// console.log('ne ok');
+
+// let value = '40';
+
+// console.log(Number(value) + 8);
+// console.log(typeof value);
+
+// let a = 10;
+// let b = 5;
+
+// let result = a > b;
+// console.log(Boolean(result));
+
+// const greet = function (name) {
+//   return console.log(name);
+// };
+
+// greet("andrei")
+// console.log(typeof greet);
+
+// if (true) {
+//   //true
+// } else {
+//   //false
+// }
+
+
+//true or false
+// const isEven= function (number=432) {
+//   return number % 2 === 0;
+// }
+
+
+const returnEvenWord= function (number=432) {
+  // if (number % 2 === 0) {
+  //   return'even '  //!!!!return !exit
+  // };
+  
+  // return'odd'
+
+   return(number % 2) ? 'even' : 'odd';
+}
+// console.log(returnEvenWord ());
+
