@@ -562,23 +562,46 @@ const sale = summa > LIMIT_SUMMA ? 0.2 : 0;
 // }
 
 
-const lang = prompt('Choose lang:\n1-ua\n2-it\n3-en\n4-es')
+// const lang = prompt('Choose lang:\n1-ua\n2-it\n3-en\n4-es')
 
-switch (lang) {
-  case '1':
-    console.log('привіт');
-    break;
-  case '2':
-    console.log('chao');
-    break;
-  case '3':
-    console.log('hello');
-    break;
-  case '4':
-    console.log('holla');
-    break;
+// switch (lang) {
+//   case '1':
+//     console.log('привіт');
+//     break;
+//   case '2':
+//     console.log('chao');
+//     break;
+//   case '3':
+//     console.log('hello');
+//     break;
+//   case '4':
+//     console.log('holla');
+//     break;
 
-  default:
-    console.log('reapeat choose');
-    break;
+//   default:
+//     console.log('reapeat choose');
+//     break;
+// }
+
+ //  ![0-3  )      [ ----включая  ,  )---- не включая   //
+
+
+const age= '123';
+
+if (isNaN(age) || age < 0) {
+  console.log('error');
+} else if (age < 3) {
+  console.log('baby');
+} else if (age < 6) {
+  console.log('tudler');
+} else if (age < 13) {
+  console.log('children');
+} else if (age < 18) {
+  console.log('tinager');
+} else if (age < 70) {
+  console.log('adult');
+} else if (age < 100) {
+  console.log('oldmen');
+} else  {
+  console.log('respect');
 }
