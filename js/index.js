@@ -502,21 +502,83 @@
 //   //false
 // }
 
-
 //true or false
 // const isEven= function (number=432) {
 //   return number % 2 === 0;
 // }
 
+// const returnEvenWord = function (number = 432) {
+//   // if (number % 2 === 0) {
+//   //   return'even '  //!!!!return !exit
+//   // };
 
-const returnEvenWord= function (number=432) {
-  // if (number % 2 === 0) {
-  //   return'even '  //!!!!return !exit
-  // };
-  
-  // return'odd'
+//   // return'odd'
 
-   return(number % 2) ? 'even' : 'odd';
-}
+//   return number % 2 ? 'even' : 'odd';
+// };
 // console.log(returnEvenWord ());
 
+const checksForAdulthood = function (number = 0) {
+  return number >= 18 ? 'adult' : 'not adult';
+};
+
+const summa = 23232;
+const LIMIT_SUMMA = 1000;
+
+const sale = summa > LIMIT_SUMMA ? 0.2 : 0;
+
+// const classInput = check ? 'unabled' : 'disabled';
+
+// const classInput = isValid ? 'valid' : 'invalid'
+
+// const userNumber = Number(prompt('Enter number'));
+// if (isNaN(userNumber)) {
+//   console.log('NAN');
+// } else {
+//   if (userNumber % 5 === 0) {
+//     console.log('cratno 8');
+//   } else{ }
+//   if (userNumber % 3 === 0) {
+//     console.log('cratno 3');
+//   }
+//   if (userNumber % 2 === 0) {
+//     console.log('cratno 2');
+//   }
+// }
+
+// console.log('thanks');
+
+//!ветвление от противного
+// const userNumber = Number(prompt('Enter number'));
+// if (isNaN(userNumber)) {
+//   console.log(userNumber, 'NAN');
+  
+// } else if (userNumber % 5 === 0,) {
+//   console.log(userNumber,'34');
+  
+// } else if userNumber(userNumber % 3 === 0) {
+//   console.log(userNumber,'multyply 3');
+  
+// }
+
+
+const lang = prompt('Choose lang:\n1-ua\n2-it\n3-en\n4-es')
+
+switch (lang) {
+  case '1':
+    console.log('привіт');
+    break;
+  case '2':
+    console.log('chao');
+    break;
+  case '3':
+    console.log('hello');
+    break;
+  case '4':
+    console.log('holla');
+    break;
+
+  default:
+    console.log('reapeat choose');
+    break;
+}
