@@ -1,607 +1,649 @@
-'use strict';
-// js язык с денамической типизацией высокоуровневая интерпретиррованная мултьтипарадигминная
+//!---------------------------->if<-----------------------------
 
-// alert("hello world")
-// console.log("hello wolrfd");
+//?--------------------------1--------------------------------
 
-// let a = 1;
+// 1. Попросите пользователя ввести число. Если число положительное, выведите сообщение о том, что оно положительное.
 
-// console.log("a =", a);
-// a = a + 1;
-// console.log(a);
+/*const positiveNumber = Number(prompt('Веведите положительное число'));
 
-// const pi = 3.14;
-// console.log(pi);
-
-//string
-
-// const stringVariable1 = "string";
-// const stringVariable2 = "string";
-// const stringVariable3 = `strting`;
-// console.log('Hey says : "Hy how are you? "');
-// литеральное задание значения
-
-//number
-// 1,22,-50 10,5 10e5,infinity,-infinity,0 (+0,-0),NaA-:"Not a number"
-
-// const numberVariable1 = Infinity;
-// const numberVariable2 = NaN;
-// console.log('NaN :>> ', NaN);
-// console.log(" numberVariable:>> ", numberVariable1);
-// console.log(" 10/0", 10 / 0);
-// console.log("10 / -0", 10 / -0);
-// console.log('"abc" / 5', "abc" / 5);
-
-// const bigintValue = 33333333333333333333n;
-
-// console.log('bigintValue', bigintValue);
-// console.log('bigintValue :>> ', bigintValue);
-
-// boolean
-
-// const boolVelue = false;
-// console.log('boolVelue', boolVelue)
-
-// const boolVelue1 = true;
-
-// console.log('boolVelue1 :>> ', boolVelue1);
-
-// const symbolValue = Symbol();
-// console.log('symbolValue :>> ', symbolValue);
-
-// undefined
-// const undValue = undefined;
-// console.log('undefined :>> ', undefined);
-
-// null
-
-// const nullValue = null;
-// console.log('nullValue :>> ', nullValue);
-
-// не примитив
-
-// const obj = {};
-
-// typeof толко для примитивов
-
-// операции
-
-// const a = 1;
-// const b = 2;
-
-// const c = a % b;  -остаток от деления
-
-// console.log('c :>> ', c);
-
-// 2 **2 поднесение в степень
-
-// console.log('Math', Math.sqrt(9));
-// console.log('Math.abs(-10', Math.abs(-10) );
-// Math.sqrt корень квадратный
-// const a = 2;
-// const b = 3;
-// const c = Math.sqrt(a ** 2 + b ** 2);
-// console.log('c', c)
-// console.log(typeof c);
-
-// дано -squareSide = 5 s-? p-?
-
-// const squareSide = 5;
-// const resultS = (squareSide * squareSide );
-// const resultS = Math.pow(squareSide, 2);
-// console.log(resultS);
-
-// const resultP = ((squareSide + squareSide) * 2)
-// console.log('resultP', resultP)
-
-// value = 20;
-// value = value + 10;
-// value += 10;
-// console.log('value', value)
-
-// let age = prompt('Сколько тебе лет?');
-// let age2 = age * 2;
-
-// i = 1
-// i + = 1;
-// i ++ 1  инкремент (инкрементировать тоесть увеличевать имменно на 1)
-
-// let i = 1;
-// постифкисный инкримент i++
-// console.log("i++", i++);
-// console.log("i", i);
-
-// let j = 1;
-// инфиксный инкримент ++j
-// console.log("++j", ++j);
-// console.log("j", j);
-
-// постифкисный инкримент i--
-// let g = 1;
-// console.log('g', g);
-// console.log("g", g--);
-//  console.log("g", g--);
-// инфиксный инкримент --j
-// let f = 1;
-
-// console.log('f-- :>> ', --f
-// );
-// console.log("f-- :>> ", --f);
-
-// приоритетьтность операций
-// const result6 = 10 * 5 - 8;
-// const result7 = 2 ** (3 ** 2);
-// console.log('result7 :>> ', result7);
-
-// приведение типов явное
-
-// ("4");
-// console.log("Number('4') :>> ", Number("4"));
-// console.log("Number('true') :>> ", Number(true));
-// console.log("Number('false') :>> ", Number(false));
-// console.log("Number('null') :>> ", Number(null));
-// console.log("Number('undefined') :>> ", Number(undefined));
-// console.log("Number('55n') :>> ", Number(55n));
-// console.log("Number('Symbol()') :>> ", Number(Symbol()));
-
-// не явное привидение типов
-
-// console.log("true + 10 :>> ", true + 10);
-// console.log(5 + '5');
-// console.log('5' + 5);
-
-// console.log(typeof ('5' + 5));
-// console.log("5" + 5);
-
-// введения данных
-// prompt всё воспринимает как строку
-// const inputValue = Number(prompt('Введите число')); //50
-// const result = inputValue + inputValue; //'50' + '50'
-// console.log('result :>> ', result);
-
-// + перед prompt тоже приводит к числу
-// const firstNumber = +(prompt('Введите первое число')); //5
-
-// const firstNumber = Number(prompt("Введите первое число")); //5
-// const secondNumber = Number(prompt("Введите второе число")); //5
-
-// console.log(firstNumber + secondNumber);
-// !
-//?
-
-//* dfgdfdfg
-
-// TODO
-// console.log('Elon musk', 1982);
-// console.log('Elon musk');
-// console.log (typeof(9546465464645656n));
-
-// const string1 = ' I\'am a Teacher';
-// console.log(typeof(string1));
-//?
-// console.log(string1 ,typeof string1);
-
-// let condition = true;
-
-// if(...условие){..блок кода который будет выполняться если условие правдиво...}
-
-// if (condition) {
-//   console.log("value =", condition)
-
-// };
-
-// ! false
-// !undefined
-// !nullё
-// !NaN
-// !  ''empty string
-// ! 0 +0 -0*/
-
-//!  console.log(-2 ** 3); ошибка
-//? console.log((-2) ** 3); правильно
-
-// !логическое нет ( инвертирует)
-//  !undefined --- true
-
-// ?'west' > 'best' ---сравниваеться номер символа в таблице (=)--всегда пишеьбся вторым
-
-//логическое сложение ИЛИ ||(коньюкция)
-// 0+1 =1  1+0=1 0+0=1
-// возврашает  первую  правду или  поседнюю  ложь
-
-// логическое  умножение И && (дизъюнкция)
-
-// 1*0=0 0*1=0 0*0=0  1*1=1
-// возврашает последную правду или первую ложь
-
-// let condition = true && 12;
-
-// console.log(condition);
-
-// let price = 10;
-
-// price = (price + 5) * 1.03
-
-// console.log('price', price)
-
-// let dateBirthDay;
-// date_BirthDay = '2020/28/06';
-
-// {
-//   const dateBirthDay = '1971/28/06';
-//   console.log('  dateBirthDay:>> ', dateBirthDay );
-// }
-
-// ? имя функции отвечает на вопрос что она делает
-
-// function name(params) {
-
-// }
-
-// let str = prompt('Message', 'default');
-// console.log('str :>> ', str);
-
-// обьявление функции bad practic
-// function requestNumberAtUser(params) {
-//   const number = prompt('enter nuber','10' );
-// }
-// вызов функции
-// requestNumberAtUser();
-
-// good practic
-// функцианальное выражение function expression
-// const requestNumberAtUser = function name(params) {
-//   prompt('enter number', '10');
-// };
-// requestNumberAtUser()
-
-// !const summa = Number(firstNumber + secondNumber);//не преаброзует к числу
-
-// !функция должна быть однозадачная
-// const calcSummaTwoNumberReqAtUser = function name() {
-//   const firstNumber = prompt('enter first number');
-//   const secondNumber = prompt('enter second number');
-
-// ошибка:если ничего не ввели пустая строка либо на жали отмена либо что-то не число
-// const checkError =
-//   firstNumber === '' ||
-//   secondNumber === '' ||
-//   firstNumber === null ||
-//   secondNumber === null ||
-//   isNaN(Number(firstNumber)) ||
-//   isNaN(Number(secondNumber));
-// if (checkError) {
-// true
-// обработка ошибки
-// return 'error'; //exit
-// } else {
-// false
-// если ошибки нет выполняем этот блок кода
-// const summa = Number(firstNumber) + Number(secondNumber);
-// return summa
-// return Number(firstNumber) + Number(secondNumber);
-// }
-// };
-
-// console.log('calcSumma() :>> ', calcSumma());
-
-// const summa = calcSummaTwoNumberReqAtUser();
-// console.log('summa :>> ', summa);
-
-// -------------------------------------------
-
-// const calcSummaTwoNumberReqAtUser = function name() {
-// const firstNumber = prompt('enter first number');
-// const secondNumber = prompt('enter second number');
-
-/**
- *
- * @param {null | string} num
- * @returns { boolean}
- */
-// const isErrorInputUser = function (num) {
-// const error = num === '' || num === null || isNaN(Number(num));
-// return error;
-
-//   return num === '' || num === null || isNaN(Number(num));
-// };
-
-/**
- * Return summa two number.
- * @param {number} firstNumber
- * @param {number} secondNumber
- * @returns {null | number}
- */
-// const calcSummaTwoNumber = function name(firstNumber, secondNumber) {
-//   let summa = Number(firstNumber) + Number(secondNumber);
-//   if (isNaN(summa)) {
-//   }
-//   return null;
-// };
-// return summa;
-
-// let summaLit = calcSummaTwoNumber(1, 2);
-// console.log('summaList :>> ', summaLit);
-
-// let summaUser = calcSummaTwoNumber(firstNumber, secondNumber);
-
-// console.log('summaUser :>> ', summaUser);
-
-// const summa = calcSummaTwoNumber(1,2);
-// console.log('summa :>> ', summa);
-// if (condition) {
-// } else {
-// }
-
-// num = 3;
-
-//TODO task find the perimeter of the square P=4×a
-// const sideSquare = prompt('Enter side square', '10');
-/**
- *
- * @param {number} side
- * @returns {null | number}
- */
-// const CalcPerimeterSquare = function name(side = 0) {
-//   if (side < 0) {
-//     return null
-
-//   }
-//   return side * 4;
-// };
-
-// console.log(CalcPerimeterSquare());
-
-/**
- *
- *
- */
-// const isAdult = function (age = 0) {
-//   if (18 >= 0) {
-//     return false;
-//   }
-//   console.log('isAdult', isAdult)
-// };
-
-// b = 4;
-
-// let a = 0;
-// let b = '';
-// let c = null;
-
-// let result = a || b || c;
-
-// console.log('result', result);
-
-// if (0 || 0 || 1) {
-//   console.log('Мы попали  в условие');
-// } else {
-//   console.log('не попали');
-// }
-
-// if (1 === Number || 1 !== 1) {
-//   console.log('Мы попали  в условие');
-// } else {
-//   console.log('не попали');
-// }
-
-/**
- *
- * @param {number} side
- * @returns {null | number}
- */
-// const checksTheTriangleForEquiangularity = function (
-//   sideA = 60,
-//   sideB = 30,
-//   sideC = 60
-// ) {
-//   if (sideA + sideB + sideC !== 180) {
-//     // return ;
-//     return console.log('неравносторонний');
-//   }
-//   if (sideA === sideB && sideB === sideC) {
-//     return console.log('равносторонний');
-//   }
-// };
-
-// checksTheTriangleForEquiangularity(60, 60, 60);
-
-// const checksTheTriangleForRectangularity = function (
-//   sideA = 90,
-//   sideB = 30,
-//   sideC = 60
-// ) {
-//   const RIGHT_ANGLE = 90;
-//   if (sideA + sideB + sideC !== 180) {
-//     return console.log('НЕ треугольник');
-//   }
-//   if (sideA === RIGHT_ANGLE || sideB === RIGHT_ANGLE || sideC === RIGHT_ANGLE) {
-//     return console.log('прямоугольный треуголмек');
-//   }
-
-//   return console.log('НЕ прямоугольный треуголмек');
-// };
-// checksTheTriangleForRectangularity(80,50,50 );
-
-// const checksTheTriangleForIsosceles = function (
-//   angleA = 0,
-//   angleB = 0,
-//   angleC = 0
-// ) {
-//   const RIGHT_ANGLE = 90;
-//   if (angleA + angleB + angleC !== 180) {
-//     return console.log('НЕ треугольник');
-//   }
-
-//   if (angleA === angleB || angleA === angleC) {
-//    return console.log('isosceles');
-//   }
-
-//   return console.log('not isosceles');
-// };
-// checksTheTriangleForIsosceles(10, 20, 150);
-
-// let a = 3;
-// let b = 7;
-// console.log(typeof (a + b));
-
-// const MAX_SPEED = 120;
-// console.log(`Максимальная скорость: ${MAX_SPEED + MAX_SPEED}`);
-// let num = Number(stringValur);
-
-// let stringValur = '150';
-
-// console.log(Number (stringValur) + 50);
-
-// let x = 12;
-// let y = 4;
-
-// console.log(x / y);
-// console.log(x % y);
-
-// const temperature =1;
-
-// if (temperature > 0) {
-//   console.log('plus');
-// } else if (temperature < 0) {
-//   console.log('minus');
-// } else {
-//   console.log('0');
-// }
-
-// let isMemmber = true;
-// let isGuest = true;
-
-// if (isMemmber || isGuest) {
-//   console.log('ok');
-// }
-
-// console.log('ne ok');
-
-// let value = '40';
-
-// console.log(Number(value) + 8);
-// console.log(typeof value);
-
-// let a = 10;
-// let b = 5;
-
-// let result = a > b;
-// console.log(Boolean(result));
-
-// const greet = function (name) {
-//   return console.log(name);
-// };
-
-// greet("andrei")
-// console.log(typeof greet);
-
-// if (true) {
-//   //true
-// } else {
-//   //false
-// }
-
-//true or false
-// const isEven= function (number=432) {
-//   return number % 2 === 0;
-// }
-
-// const returnEvenWord = function (number = 432) {
-//   // if (number % 2 === 0) {
-//   //   return'even '  //!!!!return !exit
-//   // };
-
-//   // return'odd'
-
-//   return number % 2 ? 'even' : 'odd';
-// };
-// console.log(returnEvenWord ());
-
-const checksForAdulthood = function (number = 0) {
-  return number >= 18 ? 'adult' : 'not adult';
-};
-
-const summa = 23232;
-const LIMIT_SUMMA = 1000;
-
-const sale = summa > LIMIT_SUMMA ? 0.2 : 0;
-
-// const classInput = check ? 'unabled' : 'disabled';
-
-// const classInput = isValid ? 'valid' : 'invalid'
-
-// const userNumber = Number(prompt('Enter number'));
-// if (isNaN(userNumber)) {
-//   console.log('NAN');
-// } else {
-//   if (userNumber % 5 === 0) {
-//     console.log('cratno 8');
-//   } else{ }
-//   if (userNumber % 3 === 0) {
-//     console.log('cratno 3');
-//   }
-//   if (userNumber % 2 === 0) {
-//     console.log('cratno 2');
-//   }
-// }
-
-// console.log('thanks');
-
-//!ветвление от противного
-// const userNumber = Number(prompt('Enter number'));
-// if (isNaN(userNumber)) {
-//   console.log(userNumber, 'NAN');
-  
-// } else if (userNumber % 5 === 0,) {
-//   console.log(userNumber,'34');
-  
-// } else if userNumber(userNumber % 3 === 0) {
-//   console.log(userNumber,'multyply 3');
-  
-// }
-
-
-// const lang = prompt('Choose lang:\n1-ua\n2-it\n3-en\n4-es')
-
-// switch (lang) {
-//   case '1':
-//     console.log('привіт');
-//     break;
-//   case '2':
-//     console.log('chao');
-//     break;
-//   case '3':
-//     console.log('hello');
-//     break;
-//   case '4':
-//     console.log('holla');
-//     break;
-
-//   default:
-//     console.log('reapeat choose');
-//     break;
-// }
-
- //  ![0-3  )      [ ----включая  ,  )---- не включая   //
-
-
-const age= '123';
-
-if (isNaN(age) || age < 0) {
-  console.log('error');
-} else if (age < 3) {
-  console.log('baby');
-} else if (age < 6) {
-  console.log('tudler');
-} else if (age < 13) {
-  console.log('children');
-} else if (age < 18) {
-  console.log('tinager');
-} else if (age < 70) {
-  console.log('adult');
-} else if (age < 100) {
-  console.log('oldmen');
-} else  {
-  console.log('respect');
+if (positiveNumber >= 0) {
+  console.log('Число положительное');
 }
+*/
+//?------------------------2------------------------
+// 2.Запросите у пользователя число. Если число равно нулю, выведите сообщение "Число равно нулю".
+
+/*const userNumber = Number(prompt('Введите число'));
+if (userNumber === 0) {
+  console.log('Число равно 0');
+}
+*/
+//?-----------------------3-------------------
+// 3.Запросите у пользователя число. Если число четное, выведите сообщение "Это четное число".
+
+/*const oddNumber = Number(prompt('Введите число'));
+const result = oddNumber % 2;
+if ( result===0) {
+  console.log('Чётное число');
+}
+  */
+
+//?------------------------4------------------------
+// 4.Запросите у пользователя ввод его зарплаты. Если зарплата меньше 1000, выведите сообщение "Ваша зарплата ниже минимальной".
+
+/*const summaSalaries = Number(prompt('Введите вышу зарплату'))
+if (summaSalaries <= 999) {
+  console.log('Ваша зарпалата меньше 1000');
+  
+};*/
+
+//?-------------------------5---------------------------
+// 5.Попросите пользователя ввести число. Если число отрицательное, выведите сообщение "Это отрицательное число".
+
+/*const number = Number(prompt ('Введите число'));
+if (number < 0) { 
+  console.log('Число отрицательное');
+};*/
+
+//!--------------------------->if else<-----------------------
+
+//?-------------------------------1------------------------
+// 1.Запросите у пользователя число. Если число четное, выведите сообщение "Это четное число", иначе — "Это нечетное число".
+
+/*const oddNumber = Number(prompt('Введите число'));
+
+if (isNaN(oddNumber)) {
+  console.log('Вы ввели не число');
+} else {
+  const result = oddNumber % 2;
+  if (result === 0) {
+    console.log('Это четное число');
+  } else {
+    console.log('Это нечетное число');
+  }
+}
+*/
+//?-----------------------2---------------------
+// 2.Попросите пользователя ввести свой возраст. Если ему меньше 18, выведите "Вы подросток", иначе — "Вы взрослый".
+
+/*
+const ageUser = Number(prompt('Введите свой возраст'))
+
+if (ageUser < 18) {
+  console.log('Вы подросток');
+  
+} else {
+  console.log('Вы взрослый');
+  
+}*/
+//?--------------------3------------------------
+// 3.Запросите у пользователя оценку (от 0 до 100). Если оценка больше или равна 60, выведите "Вы сдали", иначе — "Вы не сдали".
+
+/*const grade = Number(prompt('Введите оценку (от 0 до 100)'));
+if (grade >= 60) {
+  console.log('Вы сдали');
+} else {
+  console.log('Вы не сдали');
+}
+  */
+//?------------------------------------4------------------------
+// 4.Попросите пользователя ввести пароль. Если введенный пароль совпадает с "password123", выведите "password123", иначе — "Доступ запрещен".
+/*
+const userPassword = prompt('Введите пароль');
+if (userPassword === 'password123') {
+  console.log('password123');
+} else {
+  console.log('Доступ запрещен');
+}
+*/
+
+//?-------------------5-------------------------
+
+// 5.Запросите у пользователя число. Если число равно нулю, выведите "Число равно нулю", иначе — "Число не равно нулю".
+/*const userNumber = Number(prompt('Введите число'));
+
+if (userNumber === 0) {
+  console.log('Число равно нулю');
+} else {
+  console.log('Число не равно нулю');
+}
+*/
+
+//!-------------->if-else-if<-----------------------
+
+//?-----------------1--------------------------
+// 1.Запросите у пользователя оценку (от 0 до 100). Если оценка 90 и выше, выведите "Отлично", если 75-89 — "Хорошо", если 50-74 — "Удовлетворительно", иначе — "Неудовлетворительно".
+
+// const userGrade = prompt('Введите оценку (от 0 до 100)');
+
+// if (userGrade >= 90) {
+//   console.log('Отлично');
+// } else if (userGrade >= 75) {
+//   console.log('Хорошо');
+// } else if (userGrade >= 50) {
+//   console.log('Удовлетворительно');
+// } else {
+//   console.log('Неудовлетворительно');
+// }
+//?-----------------------------2------------------------------------
+
+// 2.Запросите у пользователя время в часах (от 0 до 23). Если время меньше 6, выведите "Доброй ночи", если от 6 до 12 — "Доброе утро", от 12 до 18 — "Добрый день", иначе — "Добрый вечер".
+
+// const hourTime = prompt('Введите время в часах (от 0 до 23)');
+
+// if (hourTime < 6) {
+//   console.log('Доброй ночи');
+// } else if (hourTime < 12) {
+//   console.log('Доброе утро');
+// } else if (hourTime < 18) {
+//   console.log('Добрый день');
+// } else {
+//   console.log('Добрый вечер');
+// }
+//?-------------------------3-----------------------------------------
+
+// 3.Запросите у пользователя число. Если число больше 0, выведите "Положительное число". Если число меньше 0, выведите "Отрицательное число". Если число равно 0, выведите "Число равно нулю".
+
+// const usercount = Number(prompt('Введите число'));
+
+// if (isNaN(usercount)) {
+//   console.log('Вы ввели не число');
+// }
+
+// if (usercount > 0) {
+//   console.log('Положительное число');
+// } else if (usercount < 0) {
+//   console.log('Отрицательное число');
+// } else if (usercount === 0) {
+//   console.log('Число равно нулю');
+// }
+
+//?-----------------------------------4---------------------------
+// 4.Запросите у пользователя номер дня недели (от 1 до 7). Если номер 1 — "Понедельник", 2 — "Вторник", 3 — "Среда", 4 — "Четверг", 5 — "Пятница", 6 — "Суббота", 7 — "Воскресенье". В противном случае — "Неверный номер".
+
+// const userDayWeek = Number(prompt('Введите номер дня недели (от 1 до 7)'));
+
+// if (userDayWeek === 1) {
+//   console.log('Понедельник');
+// } else if (userDayWeek === 2) {
+//   console.log('Вторник');
+// } else if (userDayWeek === 3) {
+//   console.log('Среда');
+// } else if (userDayWeek === 4) {
+//   console.log('Четверг');
+// } else if (userDayWeek === 5) {
+//   console.log('Пятница');
+// } else if (userDayWeek === 6) {
+//   console.log('Суббота');
+// } else if (userDayWeek === 7) {
+//   console.log('Воскресенье');
+// } else {
+//   console.log('Неверный номер');
+// }
+
+//?-----------------------------5-----------------------------
+
+// 5.Запросите у пользователя сумму покупки. Если сумма больше 1000, выведите "Вам полагается скидка 15%", если от 500 до 1000 — "Вам полагается скидка 10%", иначе — "Скидка не предусмотрена".
+
+// const purchaseSum = Number(prompt('Введите сумму покупки'));
+
+// if (purchaseSum >= 1000) {
+//   console.log('Вам полагается скидка 15%');
+// } else if (purchaseSum >= 500) {
+//   console.log('Вам полагается скидка 10%');
+// } else {
+//   console.log('Скидка не предусмотрена');
+// }
+//!-------------------->&&<------------------------
+
+//?-------------------------1------------------------
+// 1.Запросите у пользователя число. Если число находится в диапазоне от 10 до 20 (включительно), выведите "Число в диапазоне", иначе — "Число вне диапазона".
+
+// const userNum = Number(prompt('Введите число'));
+// if (userNum >= 10 && userNum <= 20) {
+//   console.log('Число в диапазоне');
+// } else {
+//   console.log('Число вне диапазона');
+// }
+
+//?----------------------2--------------------------
+// 2.Запросите у пользователя его возраст и разрешение. Если возраст 18 лет и более и у него есть разрешение, выведите "Вы можете пройти", иначе — "Вы не можете пройти".
+
+// const userAge = prompt(
+//   'Ведите ваш возраст(если вам больше 18 вам будет разрешон вход)'
+// );
+
+// const isUserConfirmed = prompt('Хотите ли вы пройти?(введите "Yes")');
+
+// if (userAge >= 18 && isUserConfirmed === 'Yes') {
+//   console.log('Вы можете пройти');
+// } else {
+//   console.log('Вы не можете пройти');
+// }
+
+//?------------------------------------3--------------
+// 3.Запросите у пользователя логин и пароль. Если логин — "user" и пароль — "password", выведите "Доступ разрешен", иначе — "Доступ запрещен".
+
+// const userLogin = prompt('Введите логин(на англ.)');
+
+// const userPassword = prompt('Введите пароль (на англ.)');
+
+// if (userLogin === 'user' && userPassword === 'password') {
+//   console.log('Доступ разрешен');
+
+// } else {
+//   console.log('Доступ запрещен');
+// }
+
+//?----------------------------4------------------------------
+// 4.Запросите у пользователя месяц и день. Если месяц — январь и день меньше 15, выведите "Первая половина января", иначе — "Вторая половина января или другой месяц".
+
+// const month = prompt('Введите месяц');
+// const day = prompt('Введите день');
+
+// if (month === 'Январь' && day <= 15) {
+//   console.log('Первая половина января');
+
+// } else if (month === 'Январь' && day >= 15) {
+//   console.log('Вторая половина января');
+
+// } else {
+//   console.log('Другой месяц');
+// }
+
+//?--------------------------------5-----------------------------
+// 5.Запросите у пользователя оценку по двум предметам. Если обе оценки выше 70, выведите "Вы прошли оба предмета", иначе — "Вы не прошли один или оба предмета".
+
+// const firstSchoolSubject = prompt('Введите оценку(первый предмет)');
+// const secondSchoolSubject = prompt('Введите оценку(второй предмет))');
+
+// if (firstSchoolSubject >= 70 && secondSchoolSubject >= 70) {
+//   console.log('Вы прошли оба предмета');
+// } else {
+//   console.log('Вы не прошли один или оба предмета');
+// }
+
+//!-------------------> || <----------------------------------
+
+//?-------------------------------1------------------------------
+// 1.Запросите у пользователя его возраст и разрешение. Если возраст меньше 18 или у него нет разрешения, выведите "Вы не можете пройти", иначе — "Вы можете пройти"
+
+// const userAge = prompt( 'Ведите ваш возраст(если вам больше 18 вам будет разрешон вход)');
+
+// const isUserConfirmed = prompt('Хотите ли вы пройти?(введите "Yes или Not")');
+
+// if (userAge <= 18 || isUserConfirmed === 'Not') {
+//   console.log('Вы не можете пройти');
+// } else {
+//   console.log('Вы  можете пройти');
+// }
+
+//?----------------------2-----------------------------
+// 2.Запросите у пользователя две оценки. Если хотя бы одна из оценок ниже 50, выведите "Вы не сдали", иначе — "Вы сдали оба предмета".
+
+// const firstGrade = prompt('Ведите первую оценку');
+
+// const secondGrde = prompt('Ведите вторую оценку');
+
+// if (firstGrade <= 50 || secondGrde <= 50) {
+//   console.log('Вы не сдали');
+// } else {
+//   console.log('Вы сдали');
+// }
+
+//?------------------------3------------------------
+
+// 3.Запросите у пользователя номер дня недели (от 1 до 7). Если номер дня — 6 (суббота) или 7 (воскресенье), выведите "Это выходной день", иначе — "Это будний день".
+
+// const weekdayNumber = Number(prompt('Введите номер дня недели (от 1 до 7)'));
+
+// if (weekdayNumber === 6 || weekdayNumber === 7) {
+//   console.log('Это выходной день');
+// } else {
+//   console.log('Это будний день');
+// }
+//?---------------------------------------4----------------
+
+// 4.Запросите у пользователя температуру. Если температура ниже 0 или выше 30, выведите "Температура экстремальная", иначе — "Температура в норме".
+
+// const airTemperature = prompt('Введите температуру воздуха');
+
+// if (airTemperature <= 0|| airTemperature >= 30) {
+//   console.log('Температура экстремальная');
+
+// } else {
+//   console.log('Температура в норме');
+// }
+
+//?------------------5------------------------
+
+// 5.Запросите у пользователя, курит ли он или пьет алкоголь. Если пользователь курит или пьет алкоголь, выведите "У вас есть вредные привычки", иначе — "У вас нет вредных привычек".
+
+// const isSmokerDrinksAlcohol = prompt('Курите ли вы или употребляете алкоголь (Введите Yes или Not)')
+
+// if (isSmokerDrinksAlcohol === 'Yes') {
+//   console.log('У вас есть вредные привычки');
+// } else {
+//   console.log('У вас нет вредных привычек');
+// }
+
+//!---------------------------> ! <----------------------
+
+//?------------------------------------1---------------------------
+// 1.Запросите у пользователя пароль. Если пароль пустой, выведите "Пароль не может быть пустым", иначе — "Пароль принят".
+
+// const userPassword = prompt('Ведите пароль');
+
+// if (!userPassword ) {
+//   console.log('Пароль не может быть пустым');
+// } else {
+//   console.log('Пароль принят');
+// }
+
+//?-----------------------------2-------------------------------------
+
+// 2.Запросите у пользователя число. Если число четное (используя логическое отрицание), выведите "Число четное", иначе — "Число нечетное".
+
+// const userNumber = prompt('Введите число');
+
+// if ((userNumber % 2) !==1 ) {
+//   console.log('Число четное ');
+// } else {
+//   console.log('Число не чётне');
+// }
+
+//?--------------------------3----------------------------
+// 3.Запросите у пользователя, есть ли у него разрешение (да/нет). Если у него нет разрешения, выведите "Доступ запрещен", иначе — "Доступ разрешен
+
+// const isAccess = prompt('Если у вас разрешение на вход,введите (да/нет)');
+
+// if (isAccess !== 'да') {
+//   console.log('Доступ запрещен');
+
+// } else {
+//   console.log('Доступ разрешен');
+// }
+
+//?--------------------4-------------------------
+
+// 4.Запросите у пользователя имя. Если имя не указано (пустое), выведите "Имя не может быть пустым", иначе — "Добро пожаловать, [имя]".
+
+// const userName = prompt('Введите ваше имя');
+
+// if (!userName == true) {
+//   console.log('Имя не может быть пустым');
+// } else {
+//   console.log('Добро пожаловать,' + userName);
+// }
+
+//?---------------------------5-----------------------
+
+// 5.Запросите у пользователя число. Если это число не равно 10, выведите "Число не равно 10", иначе — "Число равно 10".
+
+// const userNumber = Number(prompt('Введите число'));
+
+// if (userNumber !== 10) {
+//   console.log('Число не равно 10 ');
+// } else {
+//   console.log('Число равно 10');
+// }
+
+// && + ||
+// 1.Запросите у пользователя две оценки. Если хотя бы одна оценка ниже 60 или обе оценки выше 90, выведите "Вы не сдали", иначе — "Вы сдали".
+// 2.Запросите у пользователя его роль (например, "администратор", "пользователь"). Если роль не является "администратором" и у пользователя нет разрешения, выведите "У вас нет доступа к ресурсу", иначе — "У вас есть доступ к ресурсу".
+// 3.Запросите у пользователя номер дня недели (от 1 до 7). Если это выходной день (6 или 7) или если это понедельник (1), выведите "Это выходной день или начало недели", иначе — "Это будний день".
+// 4.Запросите у пользователя категорию товара и его количество. Если категория — "еда" или "одежда" и количество меньше 5, выведите "Недостаточно товара для продажи", иначе — "Товар доступен для продажи".
+// 5.Запросите у пользователя три оценки. Если хотя бы одна из оценок ниже 60 или (все оценки выше 90 и средняя оценка выше 95), выведите "Не сдал", иначе — "Сдал".
+// 6.Запросите у пользователя, есть ли у него молоко, хлеб и яйца. Если у него нет молока или (у него нет хлеба и у него нет яиц), выведите "Необходимы покупки", иначе — "Запасы в порядке".
+// 7.Запросите у пользователя, есть ли у него доступ к интернету и есть ли у него телефон. Если у него нет доступа к интернету или (у него нет телефона и он не является студентом), выведите "Услуги недоступны", иначе — "Услуги доступны".
+// 8.Запросите у пользователя, является ли он членом клуба и сколько у него баллов. Если он не является членом клуба или (баллы меньше 100 и у него нет купона), выведите "Покупка невозможна", иначе — "Покупка возможна".
+// 9.Запросите у пользователя его возраст и статус студента. Если возраст меньше 18 или (возраст больше 25 и он не студент), выведите "Вы не можете участвовать в программе", иначе — "Вы можете участвовать в программе".
+// 10.Запросите у пользователя его роль и наличие специального разрешения. Если роль "гость" или (роль "пользователь" и нет специального разрешения), выведите "Доступ запрещен", иначе — "Доступ разрешен".
+
+//!---------------------------->  && + || <---------------------------------
+
+//?--------------------------------1------------------------------
+// 1.Запросите у пользователя две оценки. Если хотя бы одна оценка ниже 60 или обе оценки выше 90, выведите "Вы не сдали", иначе — "Вы сдали".
+
+// const firstGrade = prompt('Введите первую оценку');
+
+// const secondGrade = prompt('Введите вторую оценку');
+
+// if (
+//   firstGrade < 60 ||
+//   secondGrade < 60 ||
+//   (secondGrade > 90 && firstGrade > 90)
+// ) {
+//   console.log('Вы не сдали');
+// } else {
+//   console.log('Вы сдали');
+// }
+
+//?----------------------------2-----------------------------
+// 2.Запросите у пользователя его роль (например, "администратор", "пользователь"). Если роль не является "администратором" и у пользователя нет разрешения, выведите "У вас нет доступа к ресурсу", иначе — "У вас есть доступ к ресурсу".
+
+// const userRole = prompt(
+//   'Введите кем вы являетесь(пользователь или администратор)');
+
+//   const userAuthorization = prompt('Введите если у вас разрешение(Да или Нет)')
+
+// if (userRole === 'пользователь' && userAuthorization === 'Нет') {
+//   console.log('У вас нет доступа к ресурсу');
+// } else {
+//   console.log('У вас есть доступ к ресурсу');
+// }
+
+//?------------------------3------------------------------
+// 3.Запросите у пользователя номер дня недели (от 1 до 7). Если это выходной день (6 или 7) или если это понедельник (1), выведите "Это выходной день или начало недели", иначе — "Это будний день".
+
+// const weekNumber = prompt('Введите номер дня недели (от 1 до 7)');
+
+// if ((weekNumber === 6 || weekNumber === 7 || weekNumber === 1)) {
+//   console.log('Это выходной день или начало недели');
+// } else  {
+//   console.log('Это будний день');
+// }
+
+//?-----------------------4-----------------------
+// 4.Запросите у пользователя категорию товара и его количество. Если категория — "еда" или "одежда" и количество меньше 5, выведите "Недостаточно товара для продажи", иначе — "Товар доступен для продажи".
+
+// const productCategory = prompt('Введите категорию товара (еда или одежда)');
+
+// const productQuantity = prompt('Введите количество товара');
+
+// if (productCategory === 'еда' || productCategory === 'одежда' && productQuantity < 5) {
+//   console.log('Недостаточно товара для продажи');
+// } else {
+//   console.log('Товар доступен для продажи');
+// }
+
+//?------------------------------------5--------------------------
+
+// 5.Запросите у пользователя три оценки. Если хотя бы одна из оценок ниже 60 или (все оценки выше 90 и средняя оценка выше 95), выведите "Не сдал", иначе — "Сдал".
+
+// const firstGrade = prompt('Введите первую оценку');
+
+// const secondGrade = prompt('Ведите вторую оценку');
+
+// const thirdGrade = prompt('Введите третью оценку');
+
+// if (
+//   (firstGrade < 60 || secondGrade < 60 || thirdGrade < 60) || (firstGrade > 90 && secondGrade > 90 && thirdGrade > 90 &&
+//     (firstGrade + secondGrade + thirdGrade) / 3 > 95)
+// ) {
+//   console.log('Не сдал');
+// } else {
+//   console.log('Cдал');
+// }
+
+//?--------------------------6-------------------------------
+
+// 6.Запросите у пользователя, есть ли у него молоко, хлеб и яйца. Если у него нет молока или (у него нет хлеба и у него нет яиц), выведите "Необходимы покупки", иначе — "Запасы в порядке".
+
+// const isMilk = prompt('Если вас молоко?(введите да или нет)');
+// const isBread = prompt('Если вас хлеб?(введите да или нет)');
+// const isEggs = prompt('Если вас яйца?(введите да или нет)');
+
+// if (isMilk === 'нет' || isBread === 'нет' || isEggs === 'нет') {
+//   console.log('Необходимы покупки');
+// } else {
+//   console.log('Запасы в порядке');
+// }
+
+//?----------------------------------7-------------------------
+
+// 7.Запросите у пользователя, есть ли у него доступ к интернету и есть ли у него телефон. Если у него нет доступа к интернету или (у него нет телефона и он не является студентом), выведите "Услуги недоступны", иначе — "Услуги доступны".
+
+// const isAccesUser = confirm('если у вас доступ к интернету?');
+
+// const isSmartfonUser = confirm('если у вас смартфон?');
+
+// const isStudentUser = confirm('вы являетесь студентом?');
+
+// if (isAccesUser === false ||(isSmartfonUser === false && isStudentUser === false)) {
+//   console.log('Услуги недоступны');
+// } else {
+//   console.log('Услуги доступны');
+// }
+
+//?------------------------------------8---------------------------------
+
+// 8.Запросите у пользователя, является ли он членом клуба и сколько у него баллов. Если он не является членом клуба или (баллы меньше 100 и у него нет купона), выведите "Покупка невозможна", иначе — "Покупка возможна".
+
+// const isClubMember = prompt('Вы являетесь членом клуба?(введите да или нет)');
+
+// const userGrade = prompt('Введите количество баллов');
+
+// const userCouponCount = prompt('Введите если у вас купон(введите да или нет)');
+
+// if (isClubMember === 'нет' || (userGrade < 100 && userCouponCount === 'нет')) {
+//   console.log('Покупка невозможна');
+// } else {
+//   console.log('Покупка возможна');
+// }
+
+//?-----------------------------------9------------------------------
+
+// 9.Запросите у пользователя его возраст и статус студента. Если возраст меньше 18 или (возраст больше 25 и он не студент), выведите "Вы не можете участвовать в программе", иначе — "Вы можете участвовать в программе".
+
+// const userAge = prompt('Введите ваш возраст');
+
+// const userStatusStudent = prompt('Введите являетесь ли вы студентом(да или нет)');
+
+// if (userAge < 18 || (userAge > 25 && userStatusStudent === 'нет')) {
+//   console.log('"Вы не можете участвовать в программе');
+// } else {
+//   console.log('Вы можете участвовать в программе');
+// }
+
+//?----------------------------------10------------------------------
+
+// 10.Запросите у пользователя его роль и наличие специального разрешения. Если роль "гость" или (роль "пользователь" и нет специального разрешения), выведите "Доступ запрещен", иначе — "Доступ разрешен".
+
+// const userRole = prompt('Введите вашу роль (гость или полизователь)');
+
+// const userSpecialPermit = prompt( 'Введите если у вас специальное разрешение(да или нет)');
+
+// if (
+//   userRole === 'гость' || (userRole === 'пользователь' && userSpecialPermit === 'нет')
+// ) {
+//   console.log('Доступ запрещен');
+// } else {
+//   console.log('Доступ разрешен');
+// }
+
+//?-----------------------------------P.S-----------------------------------------------
+
+/*1. Запросите у пользователя его возраст и страну проживания. Если возраст меньше 21 и страна — не "США", выведите "Покупка алкоголя запрещена", иначе — "Покупка алкоголя разрешена".
+
+2. Запросите у пользователя, является ли он участником программы лояльности и сколько у него бонусов. Если он не является участником или у него меньше 50 бонусов, выведите "Скидка недоступна", иначе — "Скидка предоставлена".
+
+3. Запросите у пользователя день недели и время суток (утро, день, вечер). Если это выходной (суббота или воскресенье) или вечернее время, выведите "Скидка на билеты доступна", иначе — "Скидка на билеты недоступна".
+
+4. Запросите у пользователя его уровень владения языком (начальный, средний, продвинутый) и наличие опыта работы. Если уровень начальный и опыта нет, выведите "Курс недоступен", иначе — "Курс доступен".
+
+5. Запросите у пользователя, есть ли у него абонемент и сколько дней он еще действует. Если абонемента нет или осталось меньше 3 дней, выведите "Покупка абонемента обязательна", иначе — "Абонемент активен".
+
+6. Запросите у пользователя сумму на его банковском счету и статус VIP. Если сумма меньше 5000 и он не является VIP, выведите "Комиссия взимается", иначе — "Комиссия не взимается".
+
+7. Запросите у пользователя, зарегистрирован ли он на сайте и подтвержден ли его email. Если он не зарегистрирован или email не подтвержден, выведите "Вход запрещен", иначе — "Вход разрешен".
+
+8. Запросите у пользователя, является ли он участником программы и количество посещений. Если он не участник или посещений меньше 10, выведите "Бонусы не начисляются", иначе — "Бонусы начисляются".
+
+9. Запросите у пользователя тип его подписки (бесплатная, стандартная, премиум) и наличие скидочного купона. Если тип подписки бесплатная и купона нет, выведите "Услуга недоступна", иначе — "Услуга доступна".
+
+10. Запросите у пользователя его должность (менеджер, сотрудник, стажер) и время работы (менее или более 6 месяцев). Если должность "стажер" или (должность "сотрудник" и работает менее 6 месяцев), выведите "У вас нет доступа к проекту", иначе — "У вас есть доступ к проекту".
+*/
+
+//?---------------------1-----------------------------
+// 1. Запросите у пользователя его возраст и страну проживания. Если возраст меньше 21 и страна — не "США", выведите "Покупка алкоголя запрещена", иначе — "Покупка алкоголя разрешена"
+
+// const userAge = Number(prompt('Ведите ваш возраст'));
+
+// const userCountryOfResidence = prompt('Введите страну проживания').toLowerCase();
+
+// if (userAge < 21 && userCountryOfResidence !== 'сша') {
+//   console.log('Покупка алкоголя запрещена');
+// } else {
+//   console.log('Покупка алкоголя разрешена');
+// }
+
+//?-------------------------------------2-----------------------------
+
+// 2. Запросите у пользователя, является ли он участником программы лояльности и сколько у него бонусов. Если он не является участником или у него меньше 50 бонусов, выведите "Скидка недоступна", иначе — "Скидка предоставлена".
+
+// const isLoyaltyMember = confirm('является ли вы участником программы лояльности?');
+
+// const userBonusPoints = Number(prompt('Введите сколько у вас бонусов'));
+
+// if (isLoyaltyMember=== false || userBonusPoints < 50) {
+//   console.log('Скидка недоступна');
+// } else {
+//   console.log('Скидка предоставлена');
+// }
+
+//?-------------------------------------3------------------------------------
+
+// 3. Запросите у пользователя день недели и время суток (утро, день, вечер). Если это выходной (суббота или воскресенье) или вечернее время, выведите "Скидка на билеты доступна", иначе — "Скидка на билеты недоступна".
+
+// const dayWeek = prompt('Введите день недели').toLowerCase();
+
+// const timeOfDay = prompt('Введите время суток (утро, день, вечер)').toLowerCase();
+
+// if (
+//   dayWeek === 'суббота' || dayWeek === 'воскресенье' || timeOfDay === 'вечер') {
+//   console.log('Скидка на билеты доступнa');
+// } else {
+//   console.log('Скидка на билеты недоступна');
+// }
+
+//?-----------------------------------4---------------------------
+
+// 4. Запросите у пользователя его уровень владения языком (начальный, средний, продвинутый) и наличие опыта работы. Если уровень начальный и опыта нет, выведите "Курс недоступен", иначе — "Курс доступен".
+
+// const userLanguageLevel = prompt('Введите уровень владения языком (начальный, средний, продвинутый)').toLowerCase();
+
+// const hasWorkExperience = confirm('У вас есть опыт работы');
+
+// if (userLanguageLevel === 'начальный' && hasWorkExperience === false) {
+//   console.log('Курс недоступен');
+// } else {
+//   console.log('Курс доступен');
+// }
+
+//?----------------------------------5----------------------------
+
+// 5. Запросите у пользователя, есть ли у него абонемент и сколько дней он еще действует. Если абонемента нет или осталось меньше 3 дней, выведите "Покупка абонемента обязательна", иначе — "Абонемент активен".
+
+// const hasSubscription = prompt('Если у вас обонемент (да или нет)').toLowerCase();
+
+// const subscriptionExpiryDate = Number(prompt('Сколько ещё дней дествует ваш обонемент'));
+
+// if (hasSubscription === 'нет' || subscriptionExpiryDate < 3) {
+//   console.log('Покупка абонемента обязательна');
+// } else {
+//   console.log('Абонемент активен');
+  
+// }
+
+//!----------В следуюших задачах подобовлять проверки на коректный ввод данных-------
