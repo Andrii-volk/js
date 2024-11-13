@@ -719,21 +719,27 @@ const MAX_TRY = 3;
 // Пользователь пытается угадать, вы в зависимоти от ответа пользователя даете подсказки: больше или меньше секретное число.
 // После того, как пользователь угадал секретное число, вы выводите ему количество попыток, которые были потрачены на угадывание.
 
-const SECRET_NUMBER = 4;
+// const SECRET_NUMBER = 4;
 
-let numberUser = Number(prompt('Попрубуте угадать секретное число'));
+// let numberUser = Number(prompt('Попрубуте угадать секретное число'));
 
-let i = 0;
-while (true) {
-  if (numberUser === SECRET_NUMBER) {
-    console.log('Вы угадали число c попытки ' + i);
+// let i = 0;
+// while (true) {
+//   if (numberUser === SECRET_NUMBER) {
+//     console.log('Вы угадали число c попытки ' + i);
 
-    break;
-  } else if (numberUser >= 0) {
-    console.log('Введите менье');
-  } else if (numberUser <= 0) {
-    console.log('Ведите больше');
-  }
+//     break;
+//   } else if (numberUser >= 0) {
+//     console.log('Введите менье');
+//   } else if (numberUser <= 0) {
+//     console.log('Ведите больше');
+//   }
 
-  i++;
-}
+//   i++;
+// }
+
+// let num = 0;
+// while (num < 5) {
+//   console.log(num);
+//   num++;
+// }
