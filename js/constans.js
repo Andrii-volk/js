@@ -1,2 +1,2 @@
-const CORRECT_PASSWORD = 'qwe123';
+// const CORRECT_PASSWORD = 'qwe123';
 

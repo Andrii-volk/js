@@ -743,3 +743,189 @@ const MAX_TRY = 3;
 //   console.log(num);
 //   num++;
 // }
+
+//????????????????????????????????????????????????????????????????????
+
+// 1. Вывести все числа от 1 до 10
+
+// for (let i = 1; i >= 10; i++) {
+//   console.log(i);
+// }
+
+// let num1 = 5;
+// let num2 = 6;
+
+// let result = num1 + num2;
+
+// console.log('результат\t' + result);
+
+// let num = 1;
+// console.log(num);
+
+// let string = 'red'
+// console.log(string);
+
+// alert('я джава')
+
+// перебор числа от 5 до 0
+
+// for (let i = 5; i >= 0; i--) {
+//   console.log(i);
+// }
+
+// let userName = 'Andrii';
+// // alert(userName);
+// console.log('userName', userName);
+// const userAge = 35;
+// const userName = 'Andrii';
+// console.log(userAge);
+// console.log(userName);
+
+// const greeting = 'You are:';
+
+// const num = 5;
+
+// const age = prompt('How old are you?');
+
+// console.log(greeting + age + 'years old');
+
+// const num1 = Number(prompt('Введите число пеорвое'));
+// const num2 = Number(prompt('Введите число второе '));
+
+// const num3 = Number(prompt('Введите число третье'));
+
+// const result = num1 * num2 * num3;
+
+// console.log(result);
+
+// const num1 = Number(prompt('Введите первое число'));
+// const num2 = Number(prompt('Введите второе число'));
+// const mathSimbol = prompt('Введите ведите знак операции');
+
+// if (mathSimbol === '+') {
+//   let result = num1 + num2;
+//   console.log(result);
+// } else {
+//   let result = num1 - num2;
+//   console.log(result);
+// }
+
+// const day = 'saturday';
+// const date = 11;
+
+// if (day === 'saturday' && date === 10) {
+//   console.log('Сегодня пятница 13 и у вас есть скидка');
+// } else {
+//   console.log('((( жаль вам не положена скидка');
+// }
+
+// let result = prompt('fgdfg', ['sdfsdf']);
+
+let sideCount = 1;
+const TOTAL_SIDE_AMOUNT = 4;
+
+// while (sideCount <= TOTAL_SIDE_AMOUNT) {
+//   console.log('пройти прямо');
+//   console.log('пройти на право');
+//   // sideCount = sideCount + 1;
+//   sideCount++;
+// }
+// console.log(sideCount);
+
+// const pageCount = 400;
+// let firstPage = 1;
+
+// while (firstPage <= pageCount) {
+//   console.log(firstPage);
+//   firstPage++;
+// }
+
+// let userNum = Number(prompt('Введте число'));
+// alert(userNum ** 2);
+
+// let userFirstNum = Number(prompt('введите первое число '));
+// let userSecondNum = Number(prompt('введите второе число '));
+
+// let result = (userFirstNum + userSecondNum) / 2;
+
+// alert(result);
+
+// let userMinutes = Number(prompt('введите кол-во минут '));
+
+// let userSeconds = userMinutes * 60;
+
+// alert(userSeconds     +  'sec');
+
+// let greeting = 'Hello: ';
+
+// let userName = prompt('как вас зовут?');
+
+// alert(greeting + userName);
+
+// const dataUser = Number(prompt('Введите число'));
+
+// if (dataUser === 10) {
+//   console.log('верно');
+// } else {
+//   alert('не верно');
+// }
+
+// const isTest = false;
+
+// if (isTest === true) {
+//     console.log('верно');
+// } else {
+//     console.log('не верно');
+
+// }
+
+// if (!isTest === true) {
+//   console.log('верно');
+// } else {
+//     console.log('не верно');
+
+// }
+
+// let purchaseAmount = Number(prompt('Введите сумму покупки'));
+
+// if (purchaseAmount >= 500 && purchaseAmount < 800) {
+//   let resuSum = purchaseAmount * 0.03;
+
+//   let disont = purchaseAmount - resuSum;
+
+//   console.log(
+//     'вам надано скидку 3% к оплате',
+//     Math.floor(disont),
+//     'Скидка:',
+//     resuSum.toFixed(1)
+//   );
+// } else {
+//   if (purchaseAmount >= 800) {
+//     let resuSum = purchaseAmount * 0.05;
+
+//     let disont = purchaseAmount - resuSum;
+
+//     console.log(
+//       'вам надано скидку 5% к оплате',
+//       Math.floor(disont),
+//       'Скидка:',
+//       resuSum.toFixed(1)
+//     );
+//   } else {
+//     console.log('скидка предоставляеться от покупки на сумму от 500гр');
+//   }
+// }
+
+// let num = 26;
+
+// while (num > 0) {
+//   num--
+//   console.log(num);
+// }
+
+// let num = 10;
+
+// while (num <= 50) {
+//   console.log(num);
+//   num += 5;
+// }
