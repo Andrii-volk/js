@@ -1114,4 +1114,30 @@
 
 // console.log(a); // Выведет 12 использован алгоритм Евклида, который находит НОД двух чисел,
 
+//!---------------------------------------------------
+// function requestNumberAtUser(params) {
+//   let number = prompt('enter number');
+// }
 
+// requestNumberAtUser()
+//!функция страшное гавно 
+const calcSumma = function () {
+  const number1 = prompt('enter number1');
+  const number2 = prompt('enter number2');
+  if (
+    number1 === '' ||
+    number2 === '' ||
+    number1 === null ||
+    number2 === null ||
+    isNaN(Number(number1)) ||
+    isNaN(Number(number2))
+  ) {
+    return 'error';
+  } else {
+  }
+  let summa = Number(number1) + Number(number2);
+  return summa;
+};
+
+let summa = calcSumma();
+console.log(summa);
