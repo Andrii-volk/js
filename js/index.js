@@ -1120,24 +1120,75 @@
 // }
 
 // requestNumberAtUser()
-//!функция страшное гавно 
-const calcSumma = function () {
-  const number1 = prompt('enter number1');
-  const number2 = prompt('enter number2');
-  if (
-    number1 === '' ||
-    number2 === '' ||
-    number1 === null ||
-    number2 === null ||
-    isNaN(Number(number1)) ||
-    isNaN(Number(number2))
-  ) {
-    return 'error';
-  } else {
+//!функция страшное гавно
+// const calcSumma = function () {
+//   const checkError =
+//     number1 === '' ||
+//     number2 === '' ||
+//     number1 === null ||
+//     number2 === null ||
+//     isNaN(Number(number1)) ||
+//     isNaN(Number(number2));
+//   const number1 = prompt('enter number1');
+//   const number2 = prompt('enter number2');
+//   if (checkError
+// number1 === '' ||
+// number2 === '' ||
+// number1 === null ||
+// number2 === null ||
+// isNaN(Number(number1)) ||
+// isNaN(Number(number2))
+// ) {
+// return null; ///'error'; //exit лучше воврошать null
+// }
+// else {
+//
+// let summa = Number(number1) + Number(number2);}
+// return summa;\
+// return Number(number1) + Number(number2);
+// };
+
+// let summa = calcSumma();
+// console.log(summa);
+
+// const checkError =
+//   number1 === '' ||
+//   number2 === '' ||
+//   number1 === null ||
+//   number2 === null ||
+//   isNaN(Number(number1)) ||
+//   isNaN(Number(number2));
+// const number1 = prompt('enter number1');
+// const number2 = prompt('enter number2');
+
+// const calcSumma = function (number1, number2) {
+//   return Number(number1) + Number(number2);
+// };
+// console.log(calcSumma);
+
+// let summaLiter = calcSumma(1, 3); //передаём литерально
+// let summaUser = calcSumma(number1, number2); // передаём через перемменную.
+
+/**
+ * описание функции summa two number
+ * '*' значит any -любой
+ *
+ * @param {number} number1
+ * @param {number} number2
+ * @returns {null | number}
+ */
+const calcSummaTwonumber = function (number1, number2) {
+  let summa = number1 + number2;
+  if (isNaN(summa)) {
+    return null;
   }
-  let summa = Number(number1) + Number(number2);
   return summa;
 };
-
-let summa = calcSumma();
-console.log(summa);
+/**
+ * 
+ * @param {null | string} num 
+ * @returns {boolean}
+ */
+const isErrorInputNumber = function (num) {
+  return num === '' || num === null || isNaN(Number(num));
+};
