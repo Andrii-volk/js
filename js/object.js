@@ -61,48 +61,78 @@
 // console.log(dog1.name, dog1.say('woof'));
 // console.log(dog1.say('gavvvvvvv'));
 
-function Dog(name, color, isMale) { 
-  this.name = name;
-  this.color = color;
-  this.isMAle = isMale;
-  this.say = function (voice) {
-    return voice
-    
-  }
-}
+// function Dog(name, color, isMale) {
+//   this.name = name;
+//   this.color = color;
+//   this.isMAle = isMale;
+//   this.say = function (voice) {
+//     return voice;
+//   };
+// }
 
-const dog1 = new Dog( 'green', true);
+// const dog1 = new Dog('green', true);
 /* при вызове на место this становиться имя dog1
 dog1.name = 'Oscar';
   dog1.color = "green";
 
 
 */
-console.log(dog1);
-console.log(dog1.say('kdkdkdkddk'));
-const dog2 = new Dog('Bob', 'red', true);
-console.log(dog2);
+// console.log(dog1);
+// console.log(dog1.say('kdkdkdkddk'));
+// const dog2 = new Dog('Bob', 'red', true);
+// console.log(dog2);
 
-function ForUser(name, sname, age) {
-  this.name = name;
-  this.sname = sname;
-  this.age = age;
-  this.getFullNmae = function () {
-    return name + sname;
-    
-  }
-  
-}
+// function User(name, sname, age) {
+//   this.name = name;
+//   this.sname = sname;
+//   this.age = age;
+//   this.getFullNmae = function () {
+//     return this.name + this.sname;
+//   };
+// }
 
-const foruser = new ForUser('andtii ', 'boyar', 33)
+// const foruser = new User('andrii ', 'boyar', 33);
 
-console.log(foruser, foruser.getFullNmae());
+// console.log(foruser, foruser.getFullNmae());
 
-const foruser1 = new ForUser('bob ', 'bobovich', 3);
+// const foruser1 = new ForUser('bob ', 'bobovich', 3);
 
-console.log(foruser1, foruser1.getFullNmae());
+// console.log(foruser1, foruser1.getFullNmae());
 
-const foruser2 = new ForUser('sten ', 'test', 55);
+// const foruser2 = new ForUser('sten ', 'test', 55);
 
-console.log(foruser2, foruser2.getFullNmae());
+// console.log(foruser2, foruser2.getFullNmae());
+// ? функция конструктор для создания странны usa
+// function Country(nameCountry, population, area) {
+//   this.nameCountry = nameCountry;
+//   this.population = population;
+//   this.area = area;
+//   this.getDensite = function () {
+//     return this.population / this.area;
+//   };
+// }
 
+// const USA = new Country('USA', 331000000, 9500000);
+// console.log(USA);
+// const densite = USA.getDensite();
+// console.log(densite);
+//!===============================================================
+
+// function Auto(marka = 'bmw', maxSpeed = 200) {
+//   this.name = marka;
+//   this.maxSpeed = maxSpeed;
+//   this.speed = 0;
+
+//   this.accelerate = function (value) {
+//     this.speed += value;
+//   };
+//   this.decelerate = function (value) {
+//     return this.speed;
+//   };
+//   this.stop = function () {
+//     return (this.speed = 0);
+//   };
+// }
+
+// const auto = new Auto();
+// console.log(auto);

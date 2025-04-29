@@ -1177,18 +1177,129 @@
  * @param {number} number2
  * @returns {null | number}
  */
-const calcSummaTwonumber = function (number1, number2) {
-  let summa = number1 + number2;
-  if (isNaN(summa)) {
-    return null;
+// const calcSummaTwonumber = function (number1, number2) {
+//   let summa = number1 + number2;
+//   if (isNaN(summa)) {
+//     return null;
+//   }
+//   return summa;
+// };
+// /**
+//  *
+//  * @param {null | string} num
+//  * @returns {boolean}
+//  */
+// const isErrorInputNumber = function (num) {
+//   return num === '' || num === null || isNaN(Number(num));
+// };
+
+//!============
+//
+// setInterval(function () {
+//   let MessageInput = document.getElementById('message');
+//   window.alert(MessageInput.value)
+// },4000);
+
+// const hour = new Date();
+// console.log(hour);
+
+// const numbersMultipleNum = function (firstNum, secondNum, num) {
+//   for (let i = firstNum; i >= secondNum; i--) {
+//     if (i % num === 0) {
+//       console.log(i);
+//     } else {
+//       for (let i = firstNum; firstNum <= secondNum; i++)
+//         if (i % num === 0) {
+//           console.log(i);
+//         }
+//     }
+//   }
+// };
+// numbersMultipleNum(20, 15, 3);
+// numbersMultipleNum(3, 22, 5);
+
+// function f(first, last, number) {
+//   while (first !== last) {
+//     if (first % number === 0) {
+//       console.log(first);
+//     }
+//     first++;
+//   }
+// }
+
+// const numbersMultipleNum = function (firstNum, secondNum, num) {
+// Определяем направление
+//   if (firstNum >= secondNum) {
+//     // Идём от большего к меньшему
+//     for (let i = firstNum; i >= secondNum; i--) {
+//       if (i % num === 0) {
+//         console.log(i);
+//       }
+//     }
+//   } else {
+//     // Идём от меньшего к большему
+//     for (let i = firstNum; i <= secondNum; i++) {
+//       if (i % num === 0) {
+//         console.log(i);
+//       }
+//     }
+//   }
+// };
+
+// Примеры использования
+// numbersMultipleNum(20, 15, 3);
+// Вывод:
+// 18
+// 15
+
+// numbersMultipleNum(333, 22, 5);
+// Вывод: тот же, что выше (от 330 до 25)
+//предлагать пользователю решить арифмитический пример до тех пор пока он его не рещит
+//создать функцию продумать параметры используя параметры сформировать промпт вычисл
+//todo add math operation sinds
+const treningMAth = function (
+  firstNum = 5,
+  secondNum = 5,
+  applyOperators = '*'
+) {
+  let resultMultiply = 0;
+  switch (applyOperators) {
+    case '*':
+      resultMultiply = firstNum * secondNum;
+
+      break;
+    case '+':
+      resultMultiply = firstNum + secondNum;
+      break;
+    case '-':
+      resultMultiply = firstNum - secondNum;
+      break;
+    case '/':
+      resultMultiply = firstNum / secondNum;
+      break;
   }
-  return summa;
+  let i = 1;
+  let answer = 0;
+
+  while (true) {
+    let answer = Number(
+      prompt(
+        `решите арифметический пример: ${firstNum} ${applyOperators} ${secondNum} = `
+      )
+    );
+    if (isNaN(answer)) {
+      alert('Введите число!');
+      continue;
+    }
+    if (resultMultiply === answer) {
+      alert(
+        `${firstNum} ${applyOperators} ${secondNum} =${answer} ваш ответ правильный `
+      );
+      break;
+    }
+    i++;
+  }
 };
-/**
- * 
- * @param {null | string} num 
- * @returns {boolean}
- */
-const isErrorInputNumber = function (num) {
-  return num === '' || num === null || isNaN(Number(num));
-};
+
+treningMAth();
+treningMAth(4, 4, '-');
