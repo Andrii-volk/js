@@ -1257,6 +1257,14 @@
 //предлагать пользователю решить арифмитический пример до тех пор пока он его не рещит
 //создать функцию продумать параметры используя параметры сформировать промпт вычисл
 //todo add math operation sinds
+/**
+ * 
+ * @param {number} firstNum 
+ * @param {number} secondNum 
+ * @param {string} applyOperators * | -| *| +| /
+ * @returns {null | number}
+ * @description The function of accepting the efficiency of the operator
+ */
 const treningMAth = function (
   firstNum = 5,
   secondNum = 5,
@@ -1301,5 +1309,5 @@ const treningMAth = function (
   }
 };
 
-treningMAth();
-treningMAth(4, 4, '-');
+// treningMAth();
+// treningMAth(4, 4, '-');
