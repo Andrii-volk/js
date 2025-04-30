@@ -136,3 +136,32 @@ dog1.name = 'Oscar';
 
 // const auto = new Auto();
 // console.log(auto);
+
+// const obl = {
+//   prop1: 12,
+//   'prop 2': true,
+//   11: 33,
+// };
+
+// const key = 'prop 2';
+// console.log(obl);
+// console.log(obl['prop 2']);
+// console.log(obl[11]);
+
+// const table = {
+// '2*2':4,
+
+// }
+//todo вернуть обьект таблица умножения
+const creataMulTable = function (limit = 10) {
+  const table = {};
+  for (let i = 2; i <= limit; i++) {
+    for (let j = 2; j <= limit; j++) {
+      table[`${i}*${j}`] = i * j;
+    }
+  }
+  return table;
+};
+
+const table = creataMulTable();
+console.log(table);
