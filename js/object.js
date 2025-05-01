@@ -153,15 +153,61 @@ dog1.name = 'Oscar';
 
 // }
 //todo вернуть обьект таблица умножения
-const creataMulTable = function (limit = 10) {
-  const table = {};
-  for (let i = 2; i <= limit; i++) {
-    for (let j = 2; j <= limit; j++) {
-      table[`${i}*${j}`] = i * j;
-    }
-  }
-  return table;
+// const creataMulTable = function (limit = 10) {
+//   const table = {};
+//   for (let i = 2; i <= limit; i++) {
+//     for (let j = 2; j <= limit; j++) {
+//       table[`${i}*${j}`] = i * j;
+//     }
+//   }
+//   return table;
+// };
+
+// const table = creataMulTable();
+// console.log(table);
+
+const car = {
+  brand: 'wolcwagen',
+  model: 'passat',
+  yearRelease: 2003,
+  number: '3333',
+  color: 'green',
 };
 
-const table = creataMulTable();
-console.log(table);
+// console.log(car);
+// car.color = 'red';
+// delete car.yearRelease;
+
+// car.firstNameUser = 'bred';
+// car.lastNameUser = 'rererere';
+
+// console.log(car);
+
+const user = {
+  firstName: 'dag',
+  lastName: 'fdfdfdf',
+  age: 34,
+  password: 'qwerrt',
+};
+
+console.log(user);
+
+const user1 = user;
+user1.firstName = 'rerererere';
+console.log(user);
+console.log(user1);
+
+// копирование обьектов
+
+// const use1 = Object.assign({}, user);// через функцию Object.assign()
+
+// const user2 = { ...user4 };//это оператор расширения (spread operator) в JavaScript, и читается как:
+
+// создай новый объект, скопировав все свойства из объекта user4".
+
+// const car2 = Object.assign({}, car);
+// console.log(car2);
+// console.log(car===car2);
+
+// const car3 = { ...car };
+// console.log(car3 === car);
