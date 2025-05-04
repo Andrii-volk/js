@@ -166,13 +166,22 @@ dog1.name = 'Oscar';
 // const table = creataMulTable();
 // console.log(table);
 
-const car = {
-  brand: 'wolcwagen',
-  model: 'passat',
-  yearRelease: 2003,
-  number: '3333',
-  color: 'green',
-};
+// const car = {
+//   brand: 'wolcwagen',
+//   model: 'passat',
+//   yearRelease: 2003,
+//   number: '3333',
+//   color: 'green',
+// };
+
+// for (let kay in car) {
+//   console.log(`car.${kay} = ${car[kay]}`);
+// }
+
+// for (let kay in car) {
+//   // console.log(kay);
+//   console.log(kay, car[kay]);
+// }
 
 // console.log(car);
 // car.color = 'red';
@@ -183,31 +192,219 @@ const car = {
 
 // console.log(car);
 
-const user = {
-  firstName: 'dag',
-  lastName: 'fdfdfdf',
-  age: 34,
-  password: 'qwerrt',
+// const user = {
+//   firstName: 'dag',
+//   lastName: 'test',
+//   age: 34,
+//   password: 'qwerrt',
+//   color: 'blue',
+//   getFullName: function () {
+//     return `${this.firstName} ${this.lastName}`;
+//   },
+
+//   changePassword: function (newPass) {
+//     this.password = newPass;
+//   },
+//   ChangesСolor(newColor) {
+//     this.color = newColor;
+//   },
+// };
+
+// user.ChangesСolor('green');
+// user.changePassword('2323233');
+// console.log(user);
+// user.lastName = 'testovich';
+// user.firstName = 'test';
+// const userFullName = user.getFullName();
+
+// console.log(userFullName);
+
+// console.log(user);
+
+// const user1 = user;
+// user1.firstName = 'rerererere';
+// console.log(user);
+// console.log(user1);
+// перебор обьекта for ..in
+
+// for (let key in user) {
+//   // console.log(key);
+//   console.log(key,user[key]);
+// }
+// let eserProp = prompt('введите свойство')
+// console.log(user[eserProp]);
+
+// const human = {
+//   name: 'ivo',
+//   physParams: {
+//     height: 1.9,
+//     weidht : 34,
+//   }
+// }
+
+// console.log(human);
+
+// function User(firstName, lastName, age, password) {
+//   // как работает  функция конструктор под капотом
+//   // создаёться обьект и напичкиваеться данными
+//   // потом возврашаеться этот обьект нашпигованый данными
+//   // const this ={}
+//   this.name = firstName;
+//   this.surname = lastName;
+//   this.age = age;
+//   this.passw = password;
+//   this.makeOlder = function () {
+//     this.age++;
+//   }
+//   // return this;
+// }
+
+// const user1 = new User('ivan', 'ivanovich', 4, 'qwwer');
+// console.log(user1);
+// const user2 = new User('oleh', 'olehovich', 4, 'q43434343');
+// console.log(user2);
+// user1.makeOlder()
+// // провкрка типа обьекта
+// console.log(user1 instanceof User);
+
+// const isWorkingAgePerson = function (agePerson) {
+//   return agePerson >= 16 && agePerson <= 65;
+// };
+
+// console.log(isWorkingAgePerson(16));
+// console.log(isWorkingAgePerson(3));
+
+// console.log(isWorkingAgePerson(88));
+// console.log(isWorkingAgePerson(65));
+
+// const checkMultioliciti = function ( firstNum , SecondNUm) {
+
+//   return firstNum % SecondNUm === 0;
+
+// }
+
+// console.log(checkMultioliciti(25, 5));
+// console.log(checkMultioliciti(15, 3));
+
+// console.log(checkMultioliciti(15, 5));
+
+// console.log(checkMultioliciti(15, 4));
+
+// Треугольник существует только тогда, когда сумма двух его сторон больше третьей
+// const checkExistenceTriangle = function (a, b, c) {
+//   return a + b > c && a + c > b && b + c > a;
+// };
+
+// console.log(checkExistenceTriangle(1, 2, 3));
+// console.log(checkExistenceTriangle(6,8,10));
+
+// реализовать функцию для расчёта площади(или поверхности) следующей фигуры треугольник прямоугольник в зависимости от переданных размеров фигуры функция должна вернуть вычесленное значение минимум для одной фигуры на выбор
+
+// /**
+//  * Function to calculate the area of a shape.
+//  * @param {string} shape - The type of shape ('rectangle' or 'triangle').
+//  * @param {number} dimension1 - The first dimension (width and length for rectangle, base for triangle).
+//  * @param {number} dimension2 - The second dimension (length for rectangle, height for triangle).
+//  * @returns {number} The area of the shape.
+//  * @throws {Error} If the shape is unknown.
+//  */
+// function calculateArea(shape, dimension1, dimension2) {
+//   if (shape === 'rectangle') {
+//     // Для прямоугольника: площадь = ширина * длина
+//     return dimension1 * dimension2;
+//   } else if (shape === 'triangle') {
+//     // Для треугольника: площадь = (основание * высота) / 2
+//     return (dimension1 * dimension2) / 2;
+//   } else {
+//     return 'Неизвестная фигура';
+//   }
+// }
+
+// console.log(calculateArea('rectangle', 5, 10)); // Площадь прямоугольника: 50
+// console.log(calculateArea('triangle', 5, 10));
+
+// /**
+//  * Функция проверяет, находится ли число в допустимом диапазоне.
+//  * @param {number} num - Проверяемое число.
+//  * @returns {string} Результат проверки.
+//  * @throws {RangeError} Если число выходит за допустимый диапазон.
+//  */
+// function checkNumberInRange(num) {
+//   if (num < 1 || num > 100) {
+//     throw new RangeError('Число должно быть в пределах от 1 до 100');
+//   }
+//   return 'Число в допустимом диапазоне';
+// }
+
+// try {
+//   console.log(checkNumberInRange(150));  // Это вызовет ошибку
+// } catch (error) {
+//   console.error(error);  // Поймает и выведет ошибку
+// }
+// throw new Error('Что-то пошло не так');
+
+const customer = {
+  name: 'Mikki',
+  sername: 'mikkivich',
+  email: 'mikki@gmail.com',
+  password: 'qwwrr',
+  phoneNumber: '23232323223',
+  adress: {
+    city: 'Kiev',
+    sreet: 'kievskaia',
+    house: '34',
+    apartment: '3',
+  },
+
+  seeAdress() {
+    return `${customer.adress}`;
+  },
+  changePhoneNumber(newNuber) {
+    return (this.phoneNumber = newNuber);
+  },
 };
 
-console.log(user);
+customer.isMale = {
+  male: true,
+  female: false,
+};
+delete customer.email;
 
-const user1 = user;
-user1.firstName = 'rerererere';
-console.log(user);
-console.log(user1);
+const customerCopy = { ...customer }; // копирование обьекта
+const customerCopy1 = Object.assign({}, customer); // копирование обьекта
+console.log(customerCopy1);
 
-// копирование обьектов
+customer.changePhoneNumber('34343343434344444444444444444444');
+console.log(customer.adress);
+console.log(customer);
 
-// const use1 = Object.assign({}, user);// через функцию Object.assign()
+const cat = {
+  name: 'Murka',
+  color: 'red',
+  isMale: false,
+  isFurnitureDamage: true,
+};
 
-// const user2 = { ...user4 };//это оператор расширения (spread operator) в JavaScript, и читается как:
+for (let key in cat) {
+  console.log(key, cat[key]);
+}
 
-// создай новый объект, скопировав все свойства из объекта user4".
+const currentYear = new Date().getFullYear();
 
-// const car2 = Object.assign({}, car);
-// console.log(car2);
-// console.log(car===car2);
+const Book = function (author, Name, yearRelease, price) {
+  this.author = author;
+  this.name = Name;
+  this.yearRelease = yearRelease;
+  this.publisher = {
+    city: 'Kiev',
+    name: 'gary potter',
+  };
+  this.price = price;
+  this.culcAgeBook = function () {
+    return currentYear - this.yearRelease;
+  };
 
-// const car3 = { ...car };
-// console.log(car3 === car);
+  this.culcPrice = function () {
+    return (this.price += 5);
+  };
+};
