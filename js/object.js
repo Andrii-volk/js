@@ -157,7 +157,7 @@ dog1.name = 'Oscar';
 //   const table = {};
 //   for (let i = 2; i <= limit; i++) {
 //     for (let j = 2; j <= limit; j++) {
-//       table[`${i}*${j}`] = i * j;
+//       table[`${i}*${j}`] = i * j; // добавляет данные в обьект через квадратные скобки потому что ключ переменая или строка
 //     }
 //   }
 //   return table;
@@ -343,68 +343,183 @@ dog1.name = 'Oscar';
 // }
 // throw new Error('Что-то пошло не так');
 
-const customer = {
-  name: 'Mikki',
-  sername: 'mikkivich',
-  email: 'mikki@gmail.com',
-  password: 'qwwrr',
-  phoneNumber: '23232323223',
-  adress: {
-    city: 'Kiev',
-    sreet: 'kievskaia',
-    house: '34',
-    apartment: '3',
-  },
+// const customer = {
+//   name: 'Mikki',
+//   sername: 'mikkivich',
+//   email: 'mikki@gmail.com',
+//   password: 'qwwrr',
+//   phoneNumber: '23232323223',
+//   adress: {
+//     city: 'Kiev',
+//     sreet: 'kievskaia',
+//     house: '34',
+//     apartment: '3',
+//   },
 
-  seeAdress() {
-    return `${customer.adress}`;
-  },
-  changePhoneNumber(newNuber) {
-    return (this.phoneNumber = newNuber);
-  },
-};
+//   seeAdress() {
+//     return `${customer.adress}`;
+//   },
+//   changePhoneNumber(newNuber) {
+//     return (this.phoneNumber = newNuber);
+//   },
+// };
 
-customer.isMale = {
-  male: true,
-  female: false,
-};
-delete customer.email;
+// customer.isMale = {
+//   male: true,
+//   female: false,
+// };
+// delete customer.email;
 
-const customerCopy = { ...customer }; // копирование обьекта
-const customerCopy1 = Object.assign({}, customer); // копирование обьекта
-console.log(customerCopy1);
+// const customerCopy = { ...customer }; // копирование обьекта
+// const customerCopy1 = Object.assign({}, customer); // копирование обьекта
+// console.log(customerCopy1);
 
-customer.changePhoneNumber('34343343434344444444444444444444');
-console.log(customer.adress);
-console.log(customer);
+// customer.changePhoneNumber('34343343434344444444444444444444');
+// console.log(customer.adress);
+// console.log(customer);
 
-const cat = {
-  name: 'Murka',
-  color: 'red',
-  isMale: false,
-  isFurnitureDamage: true,
-};
+// const cat = {
+//   name: 'Murka',
+//   color: 'red',
+//   isMale: false,
+//   isFurnitureDamage: true,
+// };
 
-for (let key in cat) {
-  console.log(key, cat[key]);
-}
+// for (let key in cat) {
+//   console.log(key, cat[key]);
+// }
 
-const currentYear = new Date().getFullYear();
+// const currentYear = new Date().getFullYear();
 
-const Book = function (author, Name, yearRelease, price) {
-  this.author = author;
-  this.name = Name;
-  this.yearRelease = yearRelease;
-  this.publisher = {
-    city: 'Kiev',
-    name: 'gary potter',
-  };
+// const Book = function (author, Name, yearRelease, price) {
+//   this.author = author;
+//   this.name = Name;
+//   this.yearRelease = yearRelease;
+//   this.publisher = {
+//     city: 'Kiev',
+//     name: 'gary potter',
+//   };
+//   this.price = price;
+//   this.culcAgeBook = function () {
+//     return currentYear - this.yearRelease;
+//   };
+
+//   this.culcPrice = function () {
+//     return (this.price += 5);
+//   };
+// };
+
+// const book1 = new Book('frfrfrfr', 'rfrfrfrfrf', 4444, 4);
+// console.log(book1);
+
+// const person = {
+//   name: 'Ivan',
+//   age: 34,
+//   isStudent: false,
+
+// }
+// console.log(person);
+
+// const car = {
+//   brand: 'Toyota',
+//   year: 2010,
+// };
+
+// car.color = 'red';
+// car.year = 2022;
+// console.log(car);
+
+// const book = {
+//   name: 'gary potter',
+//   yearRelease: 2333,
+//   numberPages: 333,
+// };
+
+// delete book.yearRelease;
+// console.log(book);
+
+// const user = {
+//   username: 'ivan',
+// };
+// let key = 'username';
+// console.log(user[key]);
+
+// const fruit = {
+//   name: 'apple',
+//   color: 'green',
+//   isSweet: false,
+// };
+
+// for (let key in fruit) {
+//   console.log(`${key} >>>> ${fruit[key]}`);
+// }
+
+// const user = {
+//   username: '',
+// };
+// user.username = 'greg';
+// console.log(user);
+// console.log(user.username);
+
+// const book = {
+//   title: '44',
+// };
+
+// book.author = 'foma';
+
+// for (let key in book) {
+//   // console.log(key);
+
+//   console.log(`${key} >>> ${book[key]}`);
+// }
+
+// const human = {
+//   name:'Greg',
+//   age:33,
+//   cityResidence: 'Kiev',
+//   isAdult:true,
+// }
+
+// const player = {
+//   name: 'Greg',
+//   score: 0,
+//   rollDice() {
+//     return Math.floor(Math.random() * 6) + 1;
+//   },
+// };
+
+// for (let i = 1; i <= 3; i++) {
+//   let diceResult = player.rollDice();
+//   console.log(`Бросок ${i}: ${diceResult}`); // Выводим номер броска и результат
+//   player.score += diceResult;
+//   console.log(`Бросок${i}>>>${player['name']}:${player['score']}`);
+// }
+// console.log(`итоговая сумма бросков>>>${player['name']}:${player['score']}`);
+
+// const book = {
+//   title: 'Red cat',
+//   author: 'Mikki Rurk',
+//   year: 1943,
+//   getInfo() {
+//     return `Название книги:${this.title},Автор:${this.author},Год издания:${this.year}`;
+//   },
+// };
+
+// console.log(book.getInfo());
+
+// const obj1 = {};
+// const obj2 = {};
+// const newObj = obj1;//копирование по ссылке
+
+const Phone = function (brand, model, price) {
+  this.brand = brand;
+  this.model = model;
   this.price = price;
-  this.culcAgeBook = function () {
-    return currentYear - this.yearRelease;
-  };
-
-  this.culcPrice = function () {
-    return (this.price += 5);
+  this.getDetails = function () {
+    return `модель:${this.brand} марка: ${this.model} цена:${this.price}`;
   };
 };
+const lg = new Phone('samsung', 's23', 22);
+console.log(lg.getDetails());
+const samsung = new Phone('Lg', 'f3434', 333);
+console.log(samsung.getDetails());
