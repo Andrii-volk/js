@@ -511,15 +511,25 @@ dog1.name = 'Oscar';
 // const obj2 = {};
 // const newObj = obj1;//копирование по ссылке
 
-const Phone = function (brand, model, price) {
-  this.brand = brand;
-  this.model = model;
-  this.price = price;
-  this.getDetails = function () {
-    return `модель:${this.brand} марка: ${this.model} цена:${this.price}`;
-  };
-};
-const lg = new Phone('samsung', 's23', 22);
-console.log(lg.getDetails());
-const samsung = new Phone('Lg', 'f3434', 333);
-console.log(samsung.getDetails());
+// const Phone = function (brand, model, price) {
+//   this.brand = brand;
+//   this.model = model;
+//   this.price = price;
+//   this.getDetails = function () {
+//     return `модель:${this.brand} марка: ${this.model} цена:${this.price}`;
+//   };
+// };
+// const lg = new Phone('samsung', 's23', 22);
+// console.log(lg.getDetails());
+// const samsung = new Phone('Lg', 'f3434', 333);
+// console.log(samsung.getDetails());
+
+// const array = new Array(1, 2, 3);
+
+// const array1 = [1, 2, 3, 4];
+// console.log(array);
+// console.log(array1);
+
+// console.log(array.length);
+// console.log(array1.push(8));
+

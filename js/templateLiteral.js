@@ -1,3 +1,5 @@
+'use strict';
+
 // const summand1 = 1;
 // const summand2 = 4;
 
@@ -73,4 +75,32 @@
 
 // f4()
 
+// function Car(brand, year) {
+//   this.brandCar = brand;
+//   this.yearRelease = year;
+// }
+
+// Car.prototype.info = function () {
+//   return console.log('Марка-' + this.brandCar, 'Год:' + this.yearRelease);
+// };
+// const myCar = new Car('Toyota', 'dfdfdf');
+// console.log(myCar.info());
+
+// function Animal(name) {
+//   this.nameAnimal = name;
+// }
+
+// Animal.prototype.speak = function () {
+//   console.log(this.nameAnimal + ' говорит: мяу!');
+//  };
+
+// const cat = new Animal('Барсик');
+
+// console.log(cat.speak());
+
+// const foldsTwoNumbersReturnsResult = function (num1 = 0, num2 = 0) {
+//  return num1 + num2;
+// };
+
+// console.log(foldsTwoNumbersReturnsResult(5, 4));
 
