@@ -11,3 +11,65 @@
 } */
 
 /* Hello */
+.font-size {
+  font-size: 1rem;
+}
+/* Общие стили для меню */
+.dropdown-menu ul {
+  border-radius: 10px;
+  list-style: none; /* Убираем маркеры списка */
+  margin: 0;
+  padding: 0;
+  background-color: ; /* Темный фон для основного меню */
+  display: flex; /* Делаем пункты меню горизонтальными */
+  justify-content: center; /* Центрируем пункты меню */
+}
+
+.dropdown-menu li {
+  position: relative; /* Важно для позиционирования выпадающего списка */
+}
+
+.dropdown-menu a {
+  display: block; /* Делаем ссылки блочными, чтобы они занимали всю ширину li */
+  padding: 15px 20px;
+  color: white;
+  text-decoration: none; /* Убираем подчеркивание у ссылок */
+  white-space: nowrap; /* Предотвращаем перенос текста на новую строку */
+}
+
+.dropdown-menu a:hover {
+  background-color: #555; /* Изменяем фон при наведении на пункт меню */
+}
+
+/* Стили для выпадающего списка */
+.dropdown-menu .dropdown {
+  display: none; /* Скрываем выпадающий список по умолчанию */
+  position: absolute; /* Делаем его абсолютно позиционированным относительно родительского li */
+  background-color: #444; /* Фон для выпадающего списка */
+  min-width: 160px; /* Минимальная ширина, чтобы текст не обрезался */
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2); /* Небольшая тень для объема */
+  z-index: 1; /* Гарантируем, что список будет поверх другого контента */
+  border-top: 2px solid #007bff; /* Небольшая полоска сверху для акцента */
+}
+
+.dropdown-menu .dropdown li {
+  float: none; /* Убираем float, если он был у родительских li */
+  width: 100%; /* Каждый пункт выпадающего списка занимает всю ширину */
+}
+
+.dropdown-menu .dropdown a {
+  color: rgb(153, 55, 55); /* Цвет текста ссылок в выпадающем списке */
+  padding: 12px 16px;
+}
+
+.dropdown-menu .dropdown a:hover {
+  background-color: #666; /* Изменение фона при наведении на пункт выпадающего списка */
+}
+
+/* Показываем выпадающий список при наведении на родительский li */
+.dropdown-menu li:hover > .dropdown {
+  display: block; /* Показываем список */
+}
+a {
+  background-color: rgb(30, 43, 43);
+}
