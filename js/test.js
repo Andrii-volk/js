@@ -5,7 +5,7 @@ const toString = function () {
 
 const man = {
   read: function () {
-    return "i' am reading";
+    return this.name + ' reading';
   },
 };
 const student = {
