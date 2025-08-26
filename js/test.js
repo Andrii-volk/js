@@ -1,33 +1,33 @@
 'use strict';
-const toString = function () {
-  return `${this.name} ${this.sname}`;
-};
+// const toString = function () {
+//   return `${this.name} ${this.sname}`;
+// };
 
-const man = {
-  read: function () {
-    return this.name + ' reading';
-  },
-};
-const student = {
-  id: 1,
-  name: 'ellon',
-  sname: 'musk',
-  age: 50,
-  toString: toString,
-};
-const student2 = {
-  id: 2,
-  name: 'bob',
-  sname: 'mrofbusk',
-  age: 30,
-  toString, // toString:toString
-};
-// student.prototype =man
-student.__proto__ = man;
+// const man = {
+//   read: function () {
+//     return this.name + ' reading';
+//   },
+// };
+// const student = {
+//   id: 1,
+//   name: 'ellon',
+//   sname: 'musk',
+//   age: 50,
+//   toString: toString,
+// };
+// const student2 = {
+//   id: 2,
+//   name: 'bob',
+//   sname: 'mrofbusk',
+//   age: 30,
+//   toString, // toString:toString
+// };
+// // student.prototype =man
+// student.__proto__ = man;
 
-console.log(student.read());
-console.log(student2);
-console.log(student.toString);
+// console.log(student.read());
+// console.log(student2);
+// console.log(student.toString);
 //!------------------------------------------------------------------------------------
 //
 //!==================================================================================
@@ -65,23 +65,23 @@ console.log(student.toString);
 // console.log(studentMain1.fuulName());
 // console.log(studentMain1.fuulName());
 
-function LadderStep() {
-  this.up = function () {
-    ++this.step;
-  };
-  this.down = function () {
-    this.step--;
-  };
-  this.showStep = function () {
-    return this.step;
-  };
-}
+// function LadderStep() {
+//   this.up = function () {
+//     ++this.step;
+//   };
+//   this.down = function () {
+//     this.step--;
+//   };
+//   this.showStep = function () {
+//     return this.step;
+//   };
+// }
 
-function Ladder(step = 0) {
-  this.step = step;
-}
-Ladder.prototype = new LadderStep();
-const ladder = new Ladder();
+// function Ladder(step = 0) {
+//   this.step = step;
+// }
+// Ladder.prototype = new LadderStep();
+// const ladder = new Ladder();
 
 // console.log(ladder.up());
 
@@ -176,6 +176,29 @@ const ladder = new Ladder();
 // const returnArray = Object.keys(object1);
 // console.log(returnArray);
 //! необходимо создать функцию hasElement которая параметрами будет принимать массив и строку и возвращать true если есть строка в массиве и false если нет
+// function hasElement(arr, str) {
+//   for (let i = 0; i < arr.length; i++) {
+//     if (arr[0] === str) {
+//       return true
+//     }
+    
+//   }
+// return false
+// }
+// console.log(hasElement([], 'q'));
+// console.log(hasElement(['q'], 'q'));
+//!===================================================
+function hasElement(arr, str) {
+  for (let i = 0; i < arr.length; i++) {
+    if (typeof arr[i] === 'string') {
+      return true
+    }
+    
+  }
+return false
+}
+
+
 // function hasElement(array, str) {
 // console.log(array);
 // if (array[0] === str) {
@@ -240,7 +263,7 @@ const ladder = new Ladder();
 // }
 
 // console.log(findMinMaxNumber([4, -2, 5, 10.14, -150, 0, 44]));
-//! дан массив  arr найдите среднее арифметическое его элементов 
+//! дан массив  arr найдите среднее арифметическое его элементов
 //! [12,15,20,25,59,79]
 // function getAverage(arr) {
 //   let sum = 0; // сумма начинается с 0
@@ -253,3 +276,9 @@ const ladder = new Ladder();
 // }
 
 // console.log(getAverage([12, 15, 20, 25, 59, 79]));     //35
+
+function sayWord(howSay,word='qwerty') {
+  howSay(word);
+}
+
+sayWord(console.log, 'asd');
